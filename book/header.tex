@@ -38,7 +38,7 @@
 % Maybe useless when using zhspacing, the default in zhspacing is 2em.
 
 \usepackage{enumerate} % 列举环境
-\usepackage{sectsty} % 章节样式
+% \usepackage{sectsty} % 章节样式
 % \usepackage{abstract} % 摘要
 \usepackage[notindex]{tocbibind} % 目录
 \usepackage{imakeidx}
@@ -74,16 +74,16 @@ urlcolor=blue, bookmarksnumbered, pdfborder=1, bookmarksopen=false} %, xetex}
 % 在单独使用这个包时，中英文字体将统一成下述选择字体。
 
 % \setmainfont[BoldFont=SimHei]{SimSun} % Or whatever.
-% \setsansfont[Scale=MatchLowercase,Mapping=tex-text]{楷体} % Or whatever.
-% \setmonofont[Scale=MatchLowercase]{隶书} % Or whatever.
-% 
-% \# If xelatex: {{{
-% % XeLaTeX for Chinese, I don't know how to "自动断行" with LuaLaTeX. :(
+% % \setsansfont[Scale=MatchLowercase,Mapping=tex-text]{楷体} % Or whatever.
+% % \setmonofont[Scale=MatchLowercase]{隶书} % Or whatever.
+
+%% # If xelatex: {{{
+% XeLaTeX for Chinese, I don't know how to "自动断行" with LuaLaTeX. :(
 % \XeTeXlinebreaklocale "zh" %处理中文
 % \XeTeXlinebreakskip = 0pt plus 1pt minus 0.1pt %中文自动断行
-% \# End xelatex }}}
-% 
-%% \# End XeTeX version && lualatex }}}
+%% # End xelatex }}}
+
+%% # End XeTeX version && lualatex }}}
 
 %% # Elif use zhspacing: {{{
 % Much easier way on XeTeX version > 0.997
@@ -91,12 +91,12 @@ urlcolor=blue, bookmarksnumbered, pdfborder=1, bookmarksopen=false} %, xetex}
 % Default is almost OK for most of the time. Read the manual for details.
 % \newfontfamily\zhfont[BoldFont=SimHei]{SimSun} % Or whatever.
 % \newfontfamily\zhpunctfont{SimSun}
-% 
+
 % \zhspacing
-% 
-%% \# End zhspacing }}}
-% 
-%% \# Elif use xeCJK {{{
+
+%% # End zhspacing }}}
+
+%% # Elif use xeCJK {{{
 % \usepackage[CJKnumber,SlantFont,CJKaddspaces]{xeCJK}
 \usepackage[CJKnumber,SlantFont]{xeCJK}
 % Adobe Fonts: TODO
@@ -113,7 +113,7 @@ urlcolor=blue, bookmarksnumbered, pdfborder=1, bookmarksopen=false} %, xetex}
 \setCJKmainfont[BoldFont=STZhongsong, ItalicFont=STFangsong]{STSong}
 \setCJKsansfont[BoldFont=SimHei, ItalicFont=LiSu]{STXihei} % SimXX
 % \setCJKsansfont[BoldFont=STXinwei, ItalicFont=STXingkai]{STKaiti}
-\setCJKmonofont{YouYuan}
+% \setCJKmonofont{YouYuan}
 
 % Founder:
 % FZShuTi, FZYaoTi... Others are not available.
@@ -121,7 +121,7 @@ urlcolor=blue, bookmarksnumbered, pdfborder=1, bookmarksopen=false} %, xetex}
 
 \punctstyle{quanjiao} % Read the manual for details.
 
-%% \# End xeCJK }}}
+%% # End xeCJK }}}
 
 % \setmainfont{Times New Roman}
 % \setsansfont{Comic Sans MS}
@@ -130,7 +130,7 @@ urlcolor=blue, bookmarksnumbered, pdfborder=1, bookmarksopen=false} %, xetex}
 % \setmonofont{Consolas}
 % \setmonofont{Lucida Console}
 
-% \usepackage{xltxtra,xunicode}
+\usepackage{xltxtra,xunicode}
 
 %% # End xelatex [&& lualatex] }}}
 

@@ -9,7 +9,7 @@
 
 
 RM = rm
-TEX = xelatex # -quiet -interaction=nonstopmode
+TEX = xelatex -quiet -interaction=nonstopmode
 MKIDX = makeindex
 
 OPEN = evince

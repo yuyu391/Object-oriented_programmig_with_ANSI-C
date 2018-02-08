@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.2.6)  8 FEB 2018 16:09
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.2.6)  8 FEB 2018 19:47
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -101,10 +101,6 @@ Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
 (/usr/share/texlive/texmf-dist/tex/latex/tools/enumerate.sty
 Package: enumerate 2015/07/23 v3.00 enumerate extensions (DPC)
 \@enLab=\toks19
-)
-(/usr/share/texlive/texmf-dist/tex/latex/sectsty/sectsty.sty
-Package: sectsty 2002/02/25 v2.0.2 Commands to change all sectional heading sty
-les
 )
 (/usr/share/texlive/texmf-dist/tex/latex/tocbibind/tocbibind.sty
 Package: tocbibind 2010/10/13 v1.5k extra ToC listings
@@ -1435,6 +1431,67 @@ File: xeCJK.cfg 2016/02/10 v3.3.4 Configuration file for xeCJK package
 . - 'italic small caps'  (m/itsc) with NFSS spec.: 
 .................................................
 
+(/usr/share/texlive/texmf-dist/tex/latex/xltxtra/xltxtra.sty
+Package: xltxtra 2016/01/21 v0.6 Improvements for the "XeLaTeX" format
+
+(/usr/share/texlive/texmf-dist/tex/latex/realscripts/realscripts.sty
+Package: realscripts 2016/02/13 v0.3d Access OpenType subscripts and superscrip
+ts
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fakesubscript with sig. 'm' on line 19.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fakesuperscript with sig. 'm' on line 22.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \textsubscript with sig. 's' on line 25.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \textsuperscript with sig. 's' on line 28.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \realsubscript with sig. 'm' on line 45.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \realsuperscript with sig. 'm' on line 60.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \textsubsuperscript with sig. 'sO{l}mm' on line 138.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \textsupersubscript with sig. 'sO{l}mm' on line 143.
+.................................................
+\subsupersep=\dimen274
+)
+(/usr/share/texlive/texmf-dist/tex/latex/metalogo/metalogo.sty
+Package: metalogo 2010/05/29 v0.12 Extended TeX logo macros
+\xl@everylogo=\toks31
+\xl@@everylogo=\toks32
+LaTeX Info: Redefining \TeX on input line 193.
+LaTeX Info: Redefining \LaTeX on input line 202.
+LaTeX Info: Redefining \LaTeXe on input line 219.
+)
+\l__xetex_show_hyphens_wrapping_box=\box74
+\l__xetex_show_hyphens_temp_box=\box75
+\l__xetex_show_hyphens_final_box=\box76
+\g__xetex_show_hyphens_word_box=\box77
+)
 (/usr/share/texlive/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
 \fancy@headwidth=\skip74
 \f@ncyO@elh=\skip75
@@ -1448,23 +1505,23 @@ File: xeCJK.cfg 2016/02/10 v3.3.4 Configuration file for xeCJK package
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
 \lst@mode=\count179
-\lst@gtempboxa=\box74
-\lst@token=\toks31
+\lst@gtempboxa=\box78
+\lst@token=\toks33
 \lst@length=\count180
-\lst@currlwidth=\dimen274
+\lst@currlwidth=\dimen275
 \lst@column=\count181
 \lst@pos=\count182
-\lst@lostspace=\dimen275
-\lst@width=\dimen276
+\lst@lostspace=\dimen276
+\lst@width=\dimen277
 \lst@newlines=\count183
 \lst@lineno=\count184
-\lst@maxwidth=\dimen277
+\lst@maxwidth=\dimen278
 
 (/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
 File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
 \c@lstnumber=\count185
 \lst@skipnumbers=\count186
-\lst@framebox=\box75
+\lst@framebox=\box79
 )
 (/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
 File: listings.cfg 2015/06/04 1.6 listings configuration
@@ -1487,8 +1544,8 @@ Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
 Package: calc 2014/10/28 v4.3 Infix arithmetic (KKT,FJ)
 \calc@Acount=\count187
 \calc@Bcount=\count188
-\calc@Adimen=\dimen278
-\calc@Bdimen=\dimen279
+\calc@Adimen=\dimen279
+\calc@Bdimen=\dimen280
 \calc@Askip=\skip83
 \calc@Bskip=\skip84
 LaTeX Info: Redefining \setlength on input line 80.
@@ -1545,7 +1602,7 @@ LaTeX Font Info:    Try loading font information for T3+cmr on input line 21.
 File: t3cmr.fd 2001/12/31 TIPA font definitions
 )
 LaTeX Font Info:    ... okay on input line 21.
-\AtBeginShipoutBox=\box76
+\AtBeginShipoutBox=\box80
 Package hyperref Info: Link coloring ON on input line 21.
 
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
@@ -1725,7 +1782,12 @@ LaTeX Font Warning: Font shape `EU1/STXihei(0)/m/sc' undefined
 ! Undefined control sequence.
 l.116 ...quad\thetitle\ / \theauthor\ 著，\litux
                                                   \ 等，译\ /
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 LaTeX Font Info:    Try loading font information for U+msa on input line 125.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
@@ -1738,19 +1800,39 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ! Undefined control sequence.
 l.126     \bf 编\qquad 辑 &   \litux
                                         & \bf 校\qquad 对 & \litux\\
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 ! Undefined control sequence.
 l.126 ... &   \litux  & \bf 校\qquad 对 & \litux
                                                   \\
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 ! Undefined control sequence.
 l.127     \bf 封面设计    &   \litux
                                           & \bf 印\qquad 制 & \litux\\
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 ! Undefined control sequence.
 l.127 ... &   \litux  & \bf 印\qquad 制 & \litux
                                                   \\
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 [4] [5] [6
 
 ]
@@ -1764,44 +1846,17 @@ Overfull \hbox (0.52916pt too wide) in paragraph at lines 14--20
  []
 
 *************************************************
-* fontspec warning: "script-not-exist"
+* xeCJK warning: "CJKfamily-Unknown"
 * 
-* Font 'YouYuan' does not contain script 'CJK'.
+* Unknown CJK family `\CJKttdefault' is being ignored.
+* 
+* Try to use `\setCJKmonofont[...]{...}' to define it.
 *************************************************
-\g__fontspec_family_YouYuan_int=\count195
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font YouYuan/B (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font YouYuan/BI (it probably doesn't exist).
-.................................................
-.................................................
-. fontspec info: "no-font-shape"
-. 
-. Could not resolve font YouYuan/B (it probably doesn't exist).
-.................................................
 LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 22.
 
 (/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
 File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
-)
-.................................................
-. fontspec info: "defining-font"
-. 
-. Font family 'YouYuan(0)' created for font 'YouYuan' with options
-. [Script={CJK},AutoFakeSlant={0.167}].
-. 
-. This font family consists of the following NFSS series/shapes:
-. - 'normal' (m/n) with NFSS spec.: <->"YouYuan/OT:"
-. - 'small caps'  (m/sc) with NFSS spec.: - 'italic' (m/it) with NFSS spec.:
-. <->"YouYuan/OT:slant=0.167;"
-. - 'italic small caps'  (m/itsc) with NFSS spec.: 
-.................................................
- [1
+) [1
 
 
 ] [2
@@ -1821,31 +1876,56 @@ Package hyperref Warning: Token not allowed in a PDF string (Unicode):
                                       {\thecontentslabel }\postchaptername \...
 l.7 ...�数据类型：信息隐藏}{1}{chapter.1}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 ! Undefined control sequence.
 <argument> \prechaptername \CJKnumber 
                                       {\thecontentslabel }\postchaptername \...
 l.18 ...��态链接：通用函数}{11}{chapter.2}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 ! Undefined control sequence.
 <argument> \prechaptername \CJKnumber 
                                       {\thecontentslabel }\postchaptername \...
 l.27 ...��常识：算数表达式}{21}{chapter.3}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 ! Undefined control sequence.
 <argument> \prechaptername \CJKnumber 
                                       {\thecontentslabel }\postchaptername \...
 l.38 ...��：代码重用和精炼}{25}{chapter.4}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 ! Undefined control sequence.
 <argument> \prechaptername \CJKnumber 
                                       {\thecontentslabel }\postchaptername \...
 l.50 ...5}编程常识：符号表}{27}{chapter.5}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 [5
 
 
@@ -1855,13 +1935,23 @@ l.50 ...5}编程常识：符号表}{27}{chapter.5}
                                       {\thecontentslabel }\postchaptername \...
 l.61 ...��次结构：可维护性}{29}{chapter.6}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 ! Undefined control sequence.
 <argument> \prechaptername \CJKnumber 
                                       {\thecontentslabel }\postchaptername \...
 l.73 ...��执行一种编码标准}{31}{chapter.7}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <10.95> not available
 (Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 73.
 LaTeX Font Info:    Font shape `EU1/lmtt/bx/sl' in size <10.95> not available
@@ -1871,19 +1961,34 @@ LaTeX Font Info:    Font shape `EU1/lmtt/bx/sl' in size <10.95> not available
                                       {\thecontentslabel }\postchaptername \...
 l.82 ...��检查：防错性编程}{33}{chapter.8}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 ! Undefined control sequence.
 <argument> \prechaptername \CJKnumber 
                                       {\thecontentslabel }\postchaptername \...
 l.90 ...9}静态构造：自组织}{35}{chapter.9}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 ! Undefined control sequence.
 <argument> \prechaptername \CJKnumber 
                                       {\thecontentslabel }\postchaptername \...
 l.97 ...{10}委派：回调函数}{37}{chapter.10}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 101--101
  [][] [][][]\EU1/lmr/m/n/10.95 An Application Frame- 
@@ -1894,7 +1999,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 101--101
                                       {\thecontentslabel }\postchaptername \...
 l.107 ...法：内存泄漏封堵}{39}{chapter.11}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 110--110
  [][] [][][]\EU1/lmr/m/n/10.95 Implementation Class 
@@ -1905,7 +2015,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 110--110
                                       {\thecontentslabel }\postchaptername \...
 l.114 ...储、加载数据结构}{41}{chapter.12}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 118--118
  [][] [][][]\EU1/lmr/m/n/10.95 Loading Objects — 
@@ -1921,7 +2036,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 119--119
                                       {\thecontentslabel }\postchaptername \...
 l.122 ...Disciplined 错误恢复}{43}{chapter.13}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 124--124
  [][] [][][]\EU1/lmr/m/n/10.95 Implementation — 
@@ -1933,7 +2053,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 124--124
                                       {\thecontentslabel }\postchaptername \...
 l.128 ...个图形界面计算器}{45}{chapter.14}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 
 Underfull \hbox (badness 10000) in paragraph at lines 131--131
  [][] [][][]\EU1/lmr/m/n/10.95 Object–Oriented Design 
@@ -1954,14 +2079,24 @@ Underfull \hbox (badness 10000) in paragraph at lines 131--131
                              {\thechapter }章
 l.11 \chapter{抽象数据类型：信息隐藏}
                                                 
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 第{1}章 1.
 ! Undefined control sequence.
 \chapterformat ->\prechaptername \CJKnumber 
                                             {\thechapter }\postchaptername 
 l.11 \chapter{抽象数据类型：信息隐藏}
                                                 
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <10> not available
 (Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 53.
 [1
@@ -1989,14 +2124,24 @@ LaTeX Font Warning: Font shape `EU1/STSong(0)/bx/it' undefined
                              {\thechapter }章
 l.11 \chapter{动态链接：通用函数}
                                           
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 第{2}章 2.
 ! Undefined control sequence.
 \chapterformat ->\prechaptername \CJKnumber 
                                             {\thechapter }\postchaptername 
 l.11 \chapter{动态链接：通用函数}
                                           
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <9> not available
 (Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 31.
 [11
@@ -2012,18 +2157,27 @@ LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <9> not available
                              {\thechapter }章
 l.11 \chapter{编程常识：算数表达式}
                                              
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 第{3}章 3.
 ! Undefined control sequence.
 \chapterformat ->\prechaptername \CJKnumber 
                                             {\thechapter }\postchaptername 
 l.11 \chapter{编程常识：算数表达式}
                                              
-? 
-LaTeX Font Info:    Font shape `EU1/YouYuan(0)/m/sl' in size <10> not available
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
 
-(Font)              Font shape `EU1/YouYuan(0)/m/it' tried instead on input lin
-e 39.
+LaTeX Font Info:    Font shape `EU1/STSong(0)/m/sl' in size <10> not available
+(Font)              Font shape `EU1/STSong(0)/m/it' tried instead on input line
+ 39.
 [21
 
 
@@ -2040,14 +2194,24 @@ e 39.
                              {\thechapter }章
 l.11 \chapter{继承：代码重用和精炼}
                                              
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 第{4}章 4.
 ! Undefined control sequence.
 \chapterformat ->\prechaptername \CJKnumber 
                                             {\thechapter }\postchaptername 
 l.11 \chapter{继承：代码重用和精炼}
                                              
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 [25
 
 
@@ -2061,14 +2225,24 @@ l.11 \chapter{继承：代码重用和精炼}
                              {\thechapter }章
 l.11 \chapter{编程常识：符号表}
                                        
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 第{5}章 5.
 ! Undefined control sequence.
 \chapterformat ->\prechaptername \CJKnumber 
                                             {\thechapter }\postchaptername 
 l.11 \chapter{编程常识：符号表}
                                        
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 [27
 
 
@@ -2083,14 +2257,24 @@ l.11 \chapter{编程常识：符号表}
                              {\thechapter }章
 l.11 \chapter{类层次结构：可维护性}
                                              
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 第{6}章 6.
 ! Undefined control sequence.
 \chapterformat ->\prechaptername \CJKnumber 
                                             {\thechapter }\postchaptername 
 l.11 \chapter{类层次结构：可维护性}
                                              
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 [29
 
 
@@ -2105,14 +2289,24 @@ l.11 \chapter{类层次结构：可维护性}
                              {\thechapter }章
 l.11 ...} 预处理器：执行一种编码标准}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 第{7}章 7.
 ! Undefined control sequence.
 \chapterformat ->\prechaptername \CJKnumber 
                                             {\thechapter }\postchaptername 
 l.11 ...} 预处理器：执行一种编码标准}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <24.88> not available
 (Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `EU1/lmtt/bx/sl' in size <24.88> not available
@@ -2131,14 +2325,24 @@ LaTeX Font Info:    Font shape `EU1/lmtt/bx/sl' in size <24.88> not available
                              {\thechapter }章
 l.11 ...pter{动态类型检查：防错性编程}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 第{8}章 8.
 ! Undefined control sequence.
 \chapterformat ->\prechaptername \CJKnumber 
                                             {\thechapter }\postchaptername 
 l.11 ...pter{动态类型检查：防错性编程}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 [33
 
 
@@ -2153,14 +2357,24 @@ l.11 ...pter{动态类型检查：防错性编程}
                              {\thechapter }章
 l.11 \chapter{静态构造：自组织}
                                        
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 第{9}章 9.
 ! Undefined control sequence.
 \chapterformat ->\prechaptername \CJKnumber 
                                             {\thechapter }\postchaptername 
 l.11 \chapter{静态构造：自组织}
                                        
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 [35
 
 
@@ -2177,14 +2391,24 @@ l.11 \chapter{静态构造：自组织}
                              {\thechapter }章
 l.11 \chapter{委派：回调函数}
                                     
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 第{10}章 10.
 ! Undefined control sequence.
 \chapterformat ->\prechaptername \CJKnumber 
                                             {\thechapter }\postchaptername 
 l.11 \chapter{委派：回调函数}
                                     
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 [37
 
 
@@ -2198,14 +2422,24 @@ l.11 \chapter{委派：回调函数}
                              {\thechapter }章
 l.11 \chapter{类方法：内存泄漏封堵}
                                              
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 第{11}章 11.
 ! Undefined control sequence.
 \chapterformat ->\prechaptername \CJKnumber 
                                             {\thechapter }\postchaptername 
 l.11 \chapter{类方法：内存泄漏封堵}
                                              
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 [39
 
 
@@ -2222,14 +2456,24 @@ l.11 \chapter{类方法：内存泄漏封堵}
                              {\thechapter }章
 l.11 ...��持久化：存储、加载数据结构}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 第{12}章 12.
 ! Undefined control sequence.
 \chapterformat ->\prechaptername \CJKnumber 
                                             {\thechapter }\postchaptername 
 l.11 ...��持久化：存储、加载数据结构}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 [41
 
 
@@ -2243,14 +2487,24 @@ l.11 ...��持久化：存储、加载数据结构}
                              {\thechapter }章
 l.11 \chapter{异常：Disciplined 错误恢复}
                                                 
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 第{13}章 13.
 ! Undefined control sequence.
 \chapterformat ->\prechaptername \CJKnumber 
                                             {\thechapter }\postchaptername 
 l.11 \chapter{异常：Disciplined 错误恢复}
                                                 
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 [43
 
 
@@ -2267,14 +2521,24 @@ l.11 \chapter{异常：Disciplined 错误恢复}
                              {\thechapter }章
 l.11 ...��息转发：一个图形界面计算器}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 第{14}章 14.
 ! Undefined control sequence.
 \chapterformat ->\prechaptername \CJKnumber 
                                             {\thechapter }\postchaptername 
 l.11 ...��息转发：一个图形界面计算器}
                                                   
-? 
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
 [45
 
 
@@ -2353,12 +2617,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 30753 strings out of 493638
- 554045 string characters out of 6146797
- 693609 words of memory out of 5000000
- 33654 multiletter control sequences out of 15000+600000
- 11390 words of font info for 111 fonts, out of 8000000 for 9000
+ 30742 strings out of 493638
+ 554224 string characters out of 6146797
+ 694413 words of memory out of 5000000
+ 33643 multiletter control sequences out of 15000+600000
+ 11382 words of font info for 110 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
- 63i,13n,96p,10458b,1131s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 63i,13n,96p,10458b,1126s stack positions out of 5000i,500n,10000p,200000b,80000s
 
 Output written on book.pdf (79 pages).
