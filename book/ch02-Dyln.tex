@@ -218,7 +218,8 @@ void * new (const void * _class, ...)
 
 \begin{lstlisting}
 void delete (void * self)
-{   const struct Class ** cp = self;
+{   
+    const struct Class ** cp = self;
     if (self && * cp && (* cp) -> dtor)
         self = (* cp) -> dtor(self);
     free(self);
@@ -285,7 +286,8 @@ int differ (const void * self, const void * b)
 
 \begin{lstlisting}
 size_t sizeOf (const void * self)
-{   const struct Class * const * cp = self;
+{   
+    const struct Class * const * cp = self;
     assert(self && * cp);
     return (* cp) -> size;
 }
@@ -329,7 +331,8 @@ size_t sizeOf (const void * self);
 #include "String.h"
 #include "new.h"
 int main ()
-{   void * a = new(String, "a"), * aa = clone(a);
+{   
+    void * a = new(String, "a"), * aa = clone(a);
     void * b = new(String, "b");
     printf("sizeOf(a) == %u\n", sizeOf(a));
     if (differ(a, b))
@@ -374,7 +377,8 @@ struct String {
     char * text;
 };
 static void * String_ctor (void * _self, va_list * app)
-{   struct String * self = _self;
+{   
+    struct String * self = _self;
     const char * text = va_arg(* app, const char *);
     self -> text = malloc(strlen(text) + 1);
     assert(self -> text);
@@ -391,7 +395,8 @@ static void * String_ctor (void * _self, va_list * app)
 因此在这里我们不需要检查其他事情：
 \begin{lstlisting}
 static void * String_dtor (void * _self)
-{   struct String * self = _self;
+{   
+    struct String * self = _self;
     free(self -> text), self -> text = 0;
     return self;
 }
@@ -403,7 +408,8 @@ static void * String_dtor (void * _self)
 这只要简单的调用 \ccode{new()} 即可。
 \begin{lstlisting}
 static void * String_clone (const void * _self)
-{   const struct String * self = _self;
+{   
+    const struct String * self = _self;
     return new(String, self -> text);
 }
 \end{lstlisting}
@@ -413,7 +419,8 @@ static void * String_clone (const void * _self)
 如果我们比较的是两个不同的字符串，则使用 \ccode{strcmp()}：
 \begin{lstlisting}
 static int String_differ (const void * _self, const void * _b)
-{   const struct String * self = _self;
+{   
+    const struct String * self = _self;
     const struct String * b = _b;
     if (self == b)
         return 0;
@@ -466,7 +473,8 @@ struct String {
 };
 static struct String * ring;    /* of all strings */
 static void * String_clone (const void * _self)
-{   struct String * self = (void *) _self;
+{   
+    struct String * self = (void *) _self;
     ++ self -> count;
     return self;
 }
@@ -479,14 +487,16 @@ static void * String_clone (const void * _self)
 下段代码被置于字符串构造函数 \ccode{String_ctor()} 之前。
 \begin{lstlisting}
 if (ring)
-{    struct String * p = ring;
-     do
-         if (strcmp(p -> text, text) == 0)
-         {   ++ p -> count;
-             free(self);
-             return p;
-         }
-     while ((p = p -> next) != ring);
+{    
+    struct String * p = ring;
+    do
+        if (strcmp(p -> text, text) == 0)
+        {
+            ++ p -> count;
+            free(self);
+            return p;
+        }
+    while ((p = p -> next) != ring);
 }
 else
      ring = self;
@@ -502,20 +512,21 @@ self -> count = 1;
 以下的代码被置于析构函数 \ccode{String_dtor()} 之前：
 \begin{lstlisting}
 if (-- self -> count > 0)
-     return 0;
+    return 0;
 assert(ring);
 if (ring == self)
-     ring = self -> next;
+    ring = self -> next;
 if (ring == self)
-     ring = 0;
+    ring = 0;
 else
-{    struct String * p = ring;
-     while (p -> next != self)
-         p = p -> next;
-     {
-         assert(p != ring);
-     }
-     p -> next = self -> next;
+{    
+    struct String * p = ring;
+    while (p -> next != self)
+        p = p -> next;
+    {
+        assert(p != ring);
+    }
+    p -> next = self -> next;
 }
 \end{lstlisting}
 

@@ -12,7 +12,7 @@ RM = rm
 TEX = xelatex # -quiet -interaction=nonstopmode
 MKIDX = makeindex
 
-OPEN = mupdf
+OPEN = evince
 TAR = tar -cjf
 MV = mv
 CP = cp
@@ -25,7 +25,7 @@ CP = cp
 VCS = svn
 # Use Make to submit source files maybe NOT good enough.
 
-TYPE = Object-oriented programming with ANSI-C
+TYPE = book
 TARGET = $(TYPE).pdf
 BALL = OOC.tar.bz2
 
