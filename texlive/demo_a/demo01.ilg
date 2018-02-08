@@ -1,0 +1,19 @@
+This is makeindex, version 2.15 [TeX Live 2015] (kpathsea + Thai support).
+Scanning input file demo01.tex...
+!! Input index error (file = demo01.tex, line = 1):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = demo01.tex, line = 2):
+   -- Unknown index keyword \documentclass[a4paper,10pt].
+!! Input index error (file = demo01.tex, line = 3):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = demo01.tex, line = 4):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = demo01.tex, line = 5):
+   -- Unknown index keyword \begin.
+!! Input index error (file = demo01.tex, line = 6):
+   -- Unknown index keyword 你好\XeLaTeX.
+!! Input index error (file = demo01.tex, line = 7):
+   -- Unknown index keyword \end.
+done (0 entries accepted, 7 rejected).
+Nothing written in demo01.ind.
+Transcript written in demo01.ilg.

@@ -1,0 +1,55 @@
+This is makeindex, version 2.15 [TeX Live 2015] (kpathsea + Thai support).
+Scanning input file HelloWorld.tex...
+!! Input index error (file = HelloWorld.tex, line = 1):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = HelloWorld.tex, line = 2):
+   -- Unknown index keyword %\documentclass[a4paper,10pt].
+!! Input index error (file = HelloWorld.tex, line = 3):
+   -- Unknown index keyword %\usepackage.
+!! Input index error (file = HelloWorld.tex, line = 4):
+   -- Unknown index keyword %\begin.
+!! Input index error (file = HelloWorld.tex, line = 5):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = HelloWorld.tex, line = 6):
+   -- Unknown index keyword %\XeLaTeX.
+!! Input index error (file = HelloWorld.tex, line = 7):
+   -- Unknown index keyword %\end.
+!! Input index error (file = HelloWorld.tex, line = 9):
+   -- Unknown index keyword \documentclass[a4paper,10pt].
+!! Input index error (file = HelloWorld.tex, line = 10):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = HelloWorld.tex, line = 11):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = HelloWorld.tex, line = 12):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = HelloWorld.tex, line = 13):
+   -- Unknown index keyword \setromanfont.
+!! Input index error (file = HelloWorld.tex, line = 14):
+   -- Unknown index keyword \setsansfont.
+!! Input index error (file = HelloWorld.tex, line = 15):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = HelloWorld.tex, line = 16):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = HelloWorld.tex, line = 17):
+   -- Unknown index keyword \usepackage.
+!! Input index error (file = HelloWorld.tex, line = 18):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = HelloWorld.tex, line = 19):
+   -- Unknown index keyword \title.
+!! Input index error (file = HelloWorld.tex, line = 20):
+   -- Unknown index keyword \author.
+!! Input index error (file = HelloWorld.tex, line = 21):
+   -- Unknown index keyword \date.
+!! Input index error (file = HelloWorld.tex, line = 22):
+   -- Unknown index keyword \begin.
+!! Input index error (file = HelloWorld.tex, line = 23):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = HelloWorld.tex, line = 24):
+   -- Unknown index keyword 我的\XeLaTeX.
+!! Input index error (file = HelloWorld.tex, line = 25):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = HelloWorld.tex, line = 26):
+   -- Unknown index keyword \end.
+done (0 entries accepted, 25 rejected).
+Nothing written in HelloWorld.ind.
+Transcript written in HelloWorld.ilg.
