@@ -22,6 +22,7 @@
 % For better compatibility, all settings about Chinese Locale are separated
 % in this file, and should included in the control file, e.g. paper.tex.
 
+
 \renewcommand{\chaptername}{第\CJKnumber{\thechapter}章}
 % \renewcommand{\chaptername}{第{\thechapter}章}
 \newcommand{\sectionname}{节}
@@ -35,17 +36,18 @@
 
 \newcommand{\prechaptername}{第}
 \newcommand{\postchaptername}{章}
-\newcommand{\chapterformat}
-{\prechaptername\CJKnumber{\thechapter}\postchaptername}
+\newcommand{\chapterformat}{\prechaptername\CJKnumber{\thechapter}\postchaptername}
 
-\titleformat{\chapter}[display]
-{\normalfont\flushright\Huge\sffamily\bfseries}{\chapterformat}{20pt}{\Huge}
+\titleformat{\chapter}[display]{\normalfont\flushright\Huge\sffamily\bfseries}{\chapterformat}{20pt}{\Huge}
 % \titlespacing{\chapter}{0pt}{-20pt}{25pt}
 
-\titlecontents{chapter}[0em]{\addvspace{1.5ex}\bfseries}
-{\prechaptername\CJKnumber{\thecontentslabel}\postchaptername\quad}
-{\hspace*{-0.0em}}
-{\hfill{}\contentspage}[\addvspace{0.5ex}]
+\titleformat{\section}
+{\normalfont\flushleft\LARGE\sffamily\bfseries}
+{\thesection}
+{11pt}
+{\LARGE}
+
+\titlecontents{chapter}[0em]{\addvspace{1.5ex}\bfseries}{\prechaptername\CJKnumber{\thecontentslabel}\postchaptername\quad}{\hspace*{-0.0em}}{\hfill{}\contentspage}[\addvspace{0.5ex}]
 
 % \titleformat{\chapter}[block]{\center\Huge}{\chaptername}{20pt}{}
 
@@ -78,7 +80,7 @@
 % \newtheorem{rmk}{注记}
 
 \renewcommand{\appendixname}{附录}
-\renewcommand{\bibname}{参考文献}
+% \renewcommand{\bibname}{参考文献}
 % \renewcommand{\refname}{参考文献}
 
 % \renewcommand{\chaptername}[2]{第~\thechapter~章}

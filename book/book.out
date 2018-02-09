@@ -34,8 +34,8 @@
 \BOOKMARK [1][-]{section.3.9}{3.9\040Infix\040Output}{chapter.3}% 34
 \BOOKMARK [1][-]{section.3.10}{3.10 小结}{chapter.3}% 35
 \BOOKMARK [0][-]{chapter.4}{4 继承：代码重用和精炼}{titlepage.-1}% 36
-\BOOKMARK [1][-]{section.4.1}{4.1 一个父类：Point}{chapter.4}% 37
-\BOOKMARK [1][-]{section.4.2}{4.2 父类的实现：Point}{chapter.4}% 38
+\BOOKMARK [1][-]{section.4.1}{4.1 A Superclass：Point}{chapter.4}% 37
+\BOOKMARK [1][-]{section.4.2}{4.2 Superclass Implementation：Point}{chapter.4}% 38
 \BOOKMARK [1][-]{section.4.3}{4.3 继承：Circle}{chapter.4}% 39
 \BOOKMARK [1][-]{section.4.4}{4.4 联系与继承}{chapter.4}% 40
 \BOOKMARK [1][-]{section.4.5}{4.5 静态和动态链接}{chapter.4}% 41
@@ -162,5 +162,4 @@
 \BOOKMARK [1][-]{section.C.2}{C.2 函数}{appendix.C}% 162
 \BOOKMARK [1][-]{section.C.3}{C.3 根类}{appendix.C}% 163
 \BOOKMARK [1][-]{section.C.4}{C.4 GUI 计算器类}{appendix.C}% 164
-\BOOKMARK [0][-]{section*.4}{索 引}{titlepage.-1}% 165
-\BOOKMARK [0][-]{appendix*.6}{参考文献}{titlepage.-1}% 166
+\BOOKMARK [0][-]{appendix*.5}{参考文献}{titlepage.-1}% 165

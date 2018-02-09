@@ -12,10 +12,91 @@
 \label{ch:Inheritance}
 
 % \section{A Superclass ---\cemph{Point}}
-\section{一个父类：\cemph{Point}}<++>
+\section{A Superclass：\cemph{Point}}
+
+我们在这个章节里将开始一个基本绘画程序.
+我们应该有一个像这样的测试类(class)的代码:
+
+\begin{lstlisting}
+#include "Point.h"
+#include "new.h"
+
+int main(int argc, char ** argv)
+{
+    void *p;
+    
+    while (* ++ argv)
+    {
+        switch (** argv)
+        {
+            case 'p':
+                p = new(Point, 1, 2);
+                break;
+            default:
+                continue;
+        }
+        draw(p);
+        move(p, 10, 20);
+        draw(p);
+        delete(p);
+    }
+    return 0;
+}
+\end{lstlisting}
+
+
+对于每一个命令参数以字符 p 开始，我们获得一个新的绘图的点，
+移动这个点到某处，从新绘制，并且删除。
+标准化C语言不包含图形化输出标准的函数：
+然而，如果我们坚持产生一幅图片，
+我们能够发表文本，对于这个文本Kernighan 的图片 [Ker82] 能够理解：
+
+\begin{lstlisting}
+$ points p
+"." at 1,2
+"." at 11,22
+\end{lstlisting}
+
+坐标对于测试是无关紧要的——从商业和面向对象的说法解释：“点就是一则消息。”
+
+
+我们用这个点能做些什么呢？new() 将产生一个点，
+并且构造器期望着初始化坐标作为进一步的参数传进 new() 。
+通常，delete() 将回收我们的点并且按照惯例调用析构器。
+
+
+draw() 安排点被显示出来。
+由于我们希望与其他图形对象协同工作——因此在测试程序中会有switch——对于draw() 
+我们将提供动态连接。
+
+
+move() 通过传递一系列参数来改变点的坐标。
+如果我们实现每一个图形对象，
+这些对象都与它涉及的点关联，
+我们将能够通过简单的应用这个点的move() 方法来移动它。
+因此，对于move() 在不需要动态连接的情况下我们应该可以做。
 
 % \section{Superclass Implementation ---\cemph{Point}}
-\section{父类的实现：\cemph{Point}}<++>
+\section{Superclass Implementation：\cemph{Point}}
+在抽象数据类接口Point.h中有:
+
+\begin{lstlisting}
+extern const void * Point;			/* new(Point, x, y) */
+void move(void * point, int dx, int dy);
+\end{lstlisting}
+
+我们重复利用第二章new.?文件,我们移除new中一下方法并且增添draw()到 new.h中:
+\begin{lstlisting}
+void * new (const void * class, ...);
+void delete(void * item);
+void draw(const void * self);
+\end{lstlisting}
+
+在 new.r 中声明 \ccode{struct Class} 应该相关联于new.h 
+
+
+
+
 
 % \section{Inheritance ---\cemph{Circle}}
 \section{继承：\cemph{Circle}}<++>
