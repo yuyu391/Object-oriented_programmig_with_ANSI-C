@@ -1,5 +1,6 @@
 # Object-oriented_programmig_with_ANSI-C
 	Object-oriented_programmig_with_ANSI-C 中文翻译
+	交流学习 yuyu_391@163.com
 ## 目录
 	book		//xelatex book.pdf 生成源码
  	code		//配套代码
