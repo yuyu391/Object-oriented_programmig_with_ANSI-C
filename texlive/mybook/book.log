@@ -1,0 +1,2022 @@
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.2.6)  9 FEB 2018 18:25
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**book.tex
+(./book.tex
+LaTeX2e <2016/02/01>
+Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
+(/usr/share/texlive/texmf-dist/tex/latex/base/book.cls
+Document Class: book 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/share/texlive/texmf-dist/tex/latex/base/bk11.clo
+File: bk11.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+)
+\c@part=\count79
+\c@chapter=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (./myheader.tex
+\@input{myusepackage.aux}
+\openout2 = `myusepackage.aux'.
+
+(./myusepackage.tex (/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK.sty
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2016/01/19 v6377 L3 programming layer (loader) 
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2016/01/19 v6377 L3 programming layer (code)
+L3 Module: l3bootstrap 2016/01/01 v6339 L3 Bootstrap code
+L3 Module: l3names 2015/12/21 v6328 L3 Namespace for primitives
+L3 Module: l3basics 2015/11/22 v6315 L3 Basic definitions
+L3 Module: l3expan 2015/09/10 v5983 L3 Argument expansion
+L3 Module: l3tl 2015/09/29 v6121 L3 Token lists
+L3 Module: l3str 2016/01/03 v6357 L3 Strings
+L3 Module: l3seq 2015/08/05 v5777 L3 Sequences and stacks
+L3 Module: l3int 2016/01/05 v6366 L3 Integers
+\c_max_int=\count88
+\l_tmpa_int=\count89
+\l_tmpb_int=\count90
+\g_tmpa_int=\count91
+\g_tmpb_int=\count92
+L3 Module: l3quark 2015/08/17 v5855 L3 Quarks
+L3 Module: l3prg 2015/11/01 v6216 L3 Control structures
+\g__prg_map_int=\count93
+L3 Module: l3clist 2015/09/02 v5901 L3 Comma separated lists
+L3 Module: l3token 2015/11/11 v6249 L3 Experimental token manipulation
+L3 Module: l3prop 2016/01/05 v6366 L3 Property lists
+L3 Module: l3msg 2015/09/28 v6113 L3 Messages
+L3 Module: l3file 2015/12/03 v6317 L3 File and I/O operations
+\l_iow_line_count_int=\count94
+\l__iow_target_count_int=\count95
+\l__iow_current_line_int=\count96
+\l__iow_current_word_int=\count97
+\l__iow_current_indentation_int=\count98
+L3 Module: l3skip 2016/01/05 v6366 L3 Dimensions and skips
+\c_zero_dim=\dimen103
+\c_max_dim=\dimen104
+\l_tmpa_dim=\dimen105
+\l_tmpb_dim=\dimen106
+\g_tmpa_dim=\dimen107
+\g_tmpb_dim=\dimen108
+\c_zero_skip=\skip43
+\c_max_skip=\skip44
+\l_tmpa_skip=\skip45
+\l_tmpb_skip=\skip46
+\g_tmpa_skip=\skip47
+\g_tmpb_skip=\skip48
+\c_zero_muskip=\muskip10
+\c_max_muskip=\muskip11
+\l_tmpa_muskip=\muskip12
+\l_tmpb_muskip=\muskip13
+\g_tmpa_muskip=\muskip14
+\g_tmpb_muskip=\muskip15
+L3 Module: l3keys 2015/11/17 v6284 L3 Key-value interfaces
+\g__keyval_level_int=\count99
+\l_keys_choice_int=\count100
+L3 Module: l3fp 2015/08/25 v5890 L3 Floating points
+\c__fp_leading_shift_int=\count101
+\c__fp_middle_shift_int=\count102
+\c__fp_trailing_shift_int=\count103
+\c__fp_big_leading_shift_int=\count104
+\c__fp_big_middle_shift_int=\count105
+\c__fp_big_trailing_shift_int=\count106
+\c__fp_Bigg_leading_shift_int=\count107
+\c__fp_Bigg_middle_shift_int=\count108
+\c__fp_Bigg_trailing_shift_int=\count109
+L3 Module: l3box 2015/08/09 v5822 L3 Experimental boxes
+\c_empty_box=\box26
+\l_tmpa_box=\box27
+\l_tmpb_box=\box28
+\g_tmpa_box=\box29
+\g_tmpb_box=\box30
+L3 Module: l3coffins 2015/08/06 v5789 L3 Coffin code layer
+\l__coffin_internal_box=\box31
+\l__coffin_internal_dim=\dimen109
+\l__coffin_offset_x_dim=\dimen110
+\l__coffin_offset_y_dim=\dimen111
+\l__coffin_x_dim=\dimen112
+\l__coffin_y_dim=\dimen113
+\l__coffin_x_prime_dim=\dimen114
+\l__coffin_y_prime_dim=\dimen115
+\c_empty_coffin=\box32
+\l__coffin_aligned_coffin=\box33
+\l__coffin_aligned_internal_coffin=\box34
+\l_tmpa_coffin=\box35
+\l_tmpb_coffin=\box36
+\l__coffin_display_coffin=\box37
+\l__coffin_display_coord_coffin=\box38
+\l__coffin_display_pole_coffin=\box39
+\l__coffin_display_offset_dim=\dimen116
+\l__coffin_display_x_dim=\dimen117
+\l__coffin_display_y_dim=\dimen118
+L3 Module: l3color 2014/08/23 v5354 L3 Experimental color support
+L3 Module: l3sys 2015/09/25 v6087 L3 Experimental system/runtime functions
+L3 Module: l3candidates 2016/01/14 v6376 L3 Experimental additions to l3kernel
+\l__box_top_dim=\dimen119
+\l__box_bottom_dim=\dimen120
+\l__box_left_dim=\dimen121
+\l__box_right_dim=\dimen122
+\l__box_top_new_dim=\dimen123
+\l__box_bottom_new_dim=\dimen124
+\l__box_left_new_dim=\dimen125
+\l__box_right_new_dim=\dimen126
+\l__box_internal_box=\box40
+\l__coffin_bounding_shift_dim=\dimen127
+\l__coffin_left_corner_dim=\dimen128
+\l__coffin_right_corner_dim=\dimen129
+\l__coffin_bottom_corner_dim=\dimen130
+\l__coffin_top_corner_dim=\dimen131
+\l__coffin_scaled_total_height_dim=\dimen132
+\l__coffin_scaled_width_dim=\dimen133
+L3 Module: l3luatex 2015/11/11 v6250 L3 Experimental LuaTeX-specific functions
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3kernel/l3xdvipdfmx.def
+File: l3xdvidpfmx.def 2015/11/11 v6250 L3 Experimental driver: xdvipdfmx
+))
+Package: xeCJK 2016/02/10 v3.3.4 Typesetting CJK scripts with XeLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xtemplate/xtemplate.sty
+Package: xtemplate 2016/01/19 v6377 L3 Experimental prototype document function
+s
+\l__xtemplate_tmp_dim=\dimen134
+\l__xtemplate_tmp_int=\count110
+\l__xtemplate_tmp_muskip=\muskip16
+\l__xtemplate_tmp_skip=\skip49
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2016/01/19 v6377 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count111
+\l__xparse_m_args_int=\count112
+\l__xparse_mandatory_args_int=\count113
+\l__xparse_processor_int=\count114
+\l__xparse_v_nesting_int=\count115
+)
+(/usr/share/texlive/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2016/01/19 v6377 LaTeX2e option processing using LaTeX3 keys
+)
+\l__xeCJK_tmp_int=\count116
+\l__xeCJK_tmp_box=\box41
+\l__xeCJK_tmp_dim=\dimen135
+\l__xeCJK_tmp_skip=\skip50
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKShipoutHook with sig. '' on line 151.
+.................................................
+\g__xeCJK_spacefactor_int=\count117
+\l__xeCJK_begin_int=\count118
+\l__xeCJK_end_int=\count119
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \makexeCJKactive with sig. '' on line 380.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \makexeCJKinactive with sig. '' on line 381.
+.................................................
+\c__xeCJK_CJK_class_int=\XeTeXcharclass1
+\c__xeCJK_FullLeft_class_int=\XeTeXcharclass2
+\c__xeCJK_FullRight_class_int=\XeTeXcharclass3
+\c__xeCJK_HalfLeft_class_int=\XeTeXcharclass4
+\c__xeCJK_HalfRight_class_int=\XeTeXcharclass5
+\c__xeCJK_NormalSpace_class_int=\XeTeXcharclass6
+\c__xeCJK_CM_class_int=\XeTeXcharclass7
+\c__xeCJK_HangulJamo_class_int=\XeTeXcharclass8
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKDeclareCharClass with sig. 's>{\TrimSpaces }mm' on
+. line 555.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__xeCJK_set_char_class_aux:Nnw with sig.
+. 'm>{\SplitArgument {1}{->}}m' on line 572.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \normalspacedchars with sig. 'm' on line 617.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKResetPunctClass with sig. '' on line 624.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKResetCharClass with sig. '' on line 632.
+.................................................
+\g__xeCJK_node_int=\count120
+\c__xeCJK_CJK_node_dim=\dimen136
+\c__xeCJK_CJK-space_node_dim=\dimen137
+\c__xeCJK_default_node_dim=\dimen138
+\c__xeCJK_default-space_node_dim=\dimen139
+\c__xeCJK_CJK-widow_node_dim=\dimen140
+\c__xeCJK_normalspace_node_dim=\dimen141
+\l__xeCJK_ccglue_skip=\skip51
+\l__xeCJK_ecglue_skip=\skip52
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKnobreak with sig. '' on line 1409.
+.................................................
+\l__xeCJK_widow_penalty_int=\count121
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKDeclareSubCJKBlock with sig. 's>{\TrimSpaces
+. }m>{\TrimSpaces }m' on line 1605.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKCancelSubCJKBlock with sig. 'sm' on line 1616.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKRestoreSubCJKBlock with sig. 'sm' on line 1625.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKsetwidth with sig. 'smm' on line 1723.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKsetkern with sig. 'mmm' on line 1727.
+.................................................
+.................................................
+. xtemplate info: "declare-object-type"
+. 
+. Declaring object type 'xeCJK/punctuation' taking \c_zero  argument(s) on
+. line 1828.
+.................................................
+\l__xeCJK_fixed_punct_width_dim=\dimen142
+\l__xeCJK_mixed_punct_width_dim=\dimen143
+\l__xeCJK_middle_punct_width_dim=\dimen144
+\l__xeCJK_fixed_margin_width_dim=\dimen145
+\l__xeCJK_mixed_margin_width_dim=\dimen146
+\l__xeCJK_middle_margin_width_dim=\dimen147
+\l__xeCJK_bound_punct_width_dim=\dimen148
+\l__xeCJK_bound_margin_width_dim=\dimen149
+\l__xeCJK_margin_minimum_dim=\dimen150
+\l__xeCJK_kerning_total_width_dim=\dimen151
+\l__xeCJK_same_align_margin_dim=\dimen152
+\l__xeCJK_different_align_margin_dim=\dimen153
+\l__xeCJK_kerning_margin_width_dim=\dimen154
+\l__xeCJK_kerning_margin_minimum_dim=\dimen155
+\l__xeCJK_bound_dim=\dimen156
+\l__xeCJK_reverse_bound_dim=\dimen157
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKDeclarePunctStyle with sig. '>{\TrimSpaces }mm' on
+. line 2313.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKEditPunctStyle with sig. '>{\TrimSpaces }mm' on line
+. 2326.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setCJKfallbackfamilyfont with sig. 'mO{}m' on line 2414.
+.................................................
+\g__xeCJK_family_int=\count122
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CJKfamily with sig. 't+t-m' on line 2838.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__xeCJK_gobble_CJKfamily:wn with sig. 't+t-m' on line
+. 2852.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setCJKmainfont with sig. 'O{}m' on line 2902.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setCJKsansfont with sig. 'O{}m' on line 2908.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setCJKmonofont with sig. 'O{}m' on line 2913.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setCJKfamilyfont with sig. 'mO{}m' on line 2920.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newCJKfontfamily with sig. 'omO{}m' on line 2926.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CJKfontspec with sig. 'O{}m' on line 2931.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultCJKfontfeatures with sig. 'm' on line 2954.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addCJKfontfeatures with sig. 'sO{}m' on line 2960.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setCJKmathfont with sig. 'O{}m' on line 3130.
+.................................................
+\l__xeCJK_verb_case_int=\count123
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKVerbAddon with sig. '' on line 3283.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKOffVerbAddon with sig. '' on line 3287.
+.................................................
+\l__xeCJK_verb_exspace_skip=\skip53
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.sty
+Package: fontspec 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTeX
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec-xetex.sty
+Package: fontspec-xetex 2016/02/01 v2.5a Font selection for XeLaTeX and LuaLaTe
+X
+\l_fontspec_script_int=\count124
+\l_fontspec_language_int=\count125
+\l_fontspec_strnum_int=\count126
+\l__fontspec_tmpa_dim=\dimen158
+\l__fontspec_tmpb_dim=\dimen159
+\l__fontspec_tmpc_dim=\dimen160
+\g__file_internal_ior=\read1
+
+(/usr/share/texlive/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2005/09/27 v1.99g Standard LaTeX package
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1enc.def
+File: eu1enc.def 2010/05/27 v0.1h Experimental Unicode font encodings
+)
+LaTeX Font Info:    Try loading font information for EU1+lmr on input line 105.
+
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmr.fd
+File: eu1lmr.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+(/usr/share/texlive/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
+other characters in Unicode lower plane
+
+(/usr/share/texmf/tex/latex/tipa/t3enc.def
+File: t3enc.def 2001/12/31 T3 encoding
+LaTeX Font Info:    Try loading font information for EU1+lmss on input line 357
+.
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmss.fd
+File: eu1lmss.fd 2009/10/30 v1.6 Font defs for Latin Modern
+))
+\tipaTiiicode=\count127
+\tipasavetokens=\toks14
+\tipachecktokens=\toks15
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2014/10/28 v1.0g Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks16
+)
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2016/01/03 v1.0q Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/share/texlive/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/graphics.cfg
+File: graphics.cfg 2010/04/23 v1.9 graphics configuration of TeX Live
+)
+Package graphics Info: Driver file: xetex.def on input line 95.
+
+(/usr/share/texlive/texmf-dist/tex/xelatex/xetex-def/xetex.def
+File: xetex.def 2015/09/11 v4.06 LaTeX color/graphics driver for XeTeX (TeX Liv
+e/RRM/JK)
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/infwarerr.sty
+Package: infwarerr 2010/04/08 v1.3 Providing info/warning/error messages (HO)
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ltxcmds.sty
+Package: ltxcmds 2011/11/09 v1.22 LaTeX kernel commands for general use (HO)
+)))
+\Gin@req@height=\dimen161
+\Gin@req@width=\dimen162
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \__fontspec_post_arg:w with sig. 'mmO{}' on line 353.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'om' on line 355.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'om' on line 365.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'om' on line 375.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'om' on line 385.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'om' on line 399.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'om' on line 407.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'om' on line 415.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'om' on line 423.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mom' on line 437.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mom' on line 453.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 467.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 529.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 540.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 548.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 556.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 577.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 586.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 590.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 594.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 599.
+.................................................
+\l__fontspec_tmp_int=\count128
+
+(/usr/share/texlive/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+LaTeX Info: Redefining \itshape on input line 2705.
+LaTeX Info: Redefining \slshape on input line 2710.
+LaTeX Info: Redefining \scshape on input line 2715.
+LaTeX Info: Redefining \upshape on input line 2720.
+\l__fontspec_em_int=\count129
+\l__fontspec_emdef_int=\count130
+LaTeX Info: Redefining \em on input line 2736.
+LaTeX Info: Redefining \emph on input line 2742.
+LaTeX Info: Redefining \- on input line 2746.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 2841.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 2845.
+.................................................
+))
+(/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xunicode-addon.sty
+Package: xunicode-addon 2016/02/10 v3.3.4 addon file for xunicode
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \ReloadXunicode with sig. 'm' on line 87.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \DeclareUTFmathsymbols with sig. 'm' on line 132.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \UseMathAsText with sig. '' on line 141.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \UndeclareUTFcharacter with sig. 'O{\UTFencname }mm' on
+. line 176.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \UndeclareUTFcomposite with sig. 'O{\UTFencname }mmm' on
+. line 183.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \DeclareUTFcharacter with sig. 'O{\UTFencname }mm' on
+. line 210.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUTFSymbol with sig. 'mO{\UTFencname }m' on line
+. 236.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUTFCommand with sig. 'mO{\UTFencname }m' on line
+. 238.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \DeclareUTFcomposite with sig. 'O{\UTFencname }mmm' on
+. line 281.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUTFCompositeCommand with sig. 'mO{\UTFencname }mm'
+. on line 294.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUTFCompositeSymbol with sig. 'mO{\UTFencname }mm'
+. on line 299.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUTFComposite with sig. 'mO{\UTFencname }' on line
+. 301.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUTFEncodedAccent with sig. 'mO{\UTFencname }mm' on
+. line 303.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUTFEncodedAccents with sig. 'mO{\UTFencname }mm' on
+. line 305.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUTFEncodedSymbol with sig. 'mO{\UTFencname }mm' on
+. line 307.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUTFEncodedCircle with sig. 'mO{\UTFencname }mm' on
+. line 309.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \DeclareEncodedCompositeCharacter with sig. 'mmmm' on
+. line 311.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \DeclareEncodedCompositeAccents with sig. 'mmmm' on line
+. 313.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUTFDoubleEncodedAccent with sig. 'mO{\UTFencname
+. }mm' on line 315.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUTFDoubleEncodedSymbol with sig. 'mO{\UTFencname
+. }mm' on line 317.
+.................................................
+\l__xunadd_tmp_coffin=\box42
+\l__xunadd_circle_coffin=\box43
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \settextcircledratio with sig. 'm' on line 468.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \AtBeginUTFCommand with sig. 'sO{}+m' on line 537.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \AtEndUTFCommand with sig. 'sO{}+m' on line 547.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUTFTIPACommand with sig. 'O{\UTFencname }m' on line
+. 579.
+.................................................
+)
+(/usr/share/texlive/texmf-dist/tex/xelatex/xunicode/xunicode.sty
+File: xunicode.sty 2011/09/09 v0.981 provides access to latin accents and many 
+other characters in Unicode lower plane
+
+*** Reloading Xunicode for encoding 'EU1' ***
+) (/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xunicode-extra.def
+File: xunicode-extra.def 2016/02/10 v3.3.4 extra definition for xunicode
+)
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKsetup with sig. '+m' on line 3588.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKsetemboldenfactor with sig. 'm' on line 3590.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKsetslantfactor with sig. 'm' on line 3592.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \punctstyle with sig. 'm' on line 3593.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKplainchr with sig. '' on line 3594.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CJKsetecglue with sig. 'm' on line 3595.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CJKspace with sig. '' on line 3597.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \CJKnospace with sig. '' on line 3598.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKallowbreakbetweenpuncts with sig. '' on line 3600.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKnobreakbetweenpuncts with sig. '' on line 3602.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKenablefallback with sig. '' on line 3604.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKdisablefallback with sig. '' on line 3606.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \xeCJKsetcharclass with sig. 'mmm' on line 3611.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \nobreakspace with sig. '' on line 3730.
+.................................................
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \fontfamily with sig. 'm' on line 3776.
+.................................................
+
+(/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK.cfg
+File: xeCJK.cfg 2016/02/10 v3.3.4 Configuration file for xeCJK package
+))
+\g__fontspec_family_STSong_int=\count131
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font STFangsong/B (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font STZhongsong/I (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font STSong/BI (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'STSong(0)' created for font 'STSong' with options
+. [Script={CJK},BoldFont={STZhongsong},ItalicFont={STFangsong}].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.: <->"STSong/OT:script=hani;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: - 'bold' (bx/n) with NFSS spec.:
+. <->"STZhongsong/OT:script=hani;language=DFLT;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: - 'italic' (m/it) with NFSS
+. spec.: <->"STFangsong/OT:script=hani;language=DFLT;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+.................................................
+
+(/usr/share/texlive/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titlesec.sty
+Package: titlesec 2016/03/15 v2.10.1 Sectioning titles
+\ttl@box=\box44
+\beforetitleunit=\skip54
+\aftertitleunit=\skip55
+\ttl@plus=\dimen163
+\ttl@minus=\dimen164
+\ttl@toksa=\toks17
+\titlewidth=\dimen165
+\titlewidthlast=\dimen166
+\titlewidthfirst=\dimen167
+
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/ttlps.def
+File: ttlps.def 2016/03/15
+))
+(/usr/share/texlive/texmf-dist/tex/latex/titlesec/titletoc.sty
+Package: titletoc 2011/12/15 v1.6 TOC entries
+\ttl@leftsep=\dimen168
+)
+(/usr/share/texlive/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2007/01/21 v2.11 LaTeX color extensions (UK)
+
+(/usr/share/texlive/texmf-dist/tex/latex/latexconfig/color.cfg
+File: color.cfg 2007/01/18 v1.5 color configuration of teTeX/TeXLive
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1337.
+Package xcolor Info: Model `RGB' extended on input line 1353.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1355.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1356.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1357.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
+)
+(/usr/share/texlive/texmf-dist/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip56
+\fb@frw=\dimen169
+\fb@frh=\dimen170
+\FrameRule=\dimen171
+\FrameSep=\dimen172
+)
+(/usr/share/texlive/texmf-dist/tex/latex/tools/verbatim.sty
+Package: verbatim 2014/10/28 v1.5q LaTeX2e package for verbatim enhancements
+\every@verbatim=\toks18
+\verbatim@line=\toks19
+\verbatim@in@stream=\read2
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.sty
+\lst@mode=\count132
+\lst@gtempboxa=\box45
+\lst@token=\toks20
+\lst@length=\count133
+\lst@currlwidth=\dimen173
+\lst@column=\count134
+\lst@pos=\count135
+\lst@lostspace=\dimen174
+\lst@width=\dimen175
+\lst@newlines=\count136
+\lst@lineno=\count137
+\lst@maxwidth=\dimen176
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+\c@lstnumber=\count138
+\lst@skipnumbers=\count139
+\lst@framebox=\box46
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/listings.cfg
+File: listings.cfg 2015/06/04 1.6 listings configuration
+))
+Package: listings 2015/06/04 1.6 (Carsten Heinz)
+
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+File: lstlang1.sty 2015/06/04 1.6 listings language file
+)
+(/usr/share/texlive/texmf-dist/tex/latex/listings/lstmisc.sty
+File: lstmisc.sty 2015/06/04 1.6 (Carsten Heinz)
+))
+(/usr/share/texlive/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2010/09/12 v5.6 Page Geometry
+
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2011/01/30 v2.3 Provides the ifpdf switch (HO)
+Package ifpdf Info: pdfTeX in PDF mode is not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2010/03/01 v1.5 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/share/texlive/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count140
+\Gm@cntv=\count141
+\c@Gm@tempcnt=\count142
+\Gm@bindingoffset=\dimen177
+\Gm@wd@mp=\dimen178
+\Gm@odd@mp=\dimen179
+\Gm@even@mp=\dimen180
+\Gm@layoutwidth=\dimen181
+\Gm@layoutheight=\dimen182
+\Gm@layouthoffset=\dimen183
+\Gm@layoutvoffset=\dimen184
+\Gm@dimlist=\toks21
+)
+\@input{myrenewcommand.aux}
+\openout2 = `myrenewcommand.aux'.
+
+(./myrenewcommand.tex))
+(/usr/share/texlive/texmf-dist/tex/xelatex/xecjk/xeCJK-listings.sty
+Package: xeCJK-listings 2016/02/10 v3.3.4 xeCJK patch file for listings
+\l__xeCJK_listings_max_char_int=\count143
+\l__xeCJK_listings_flag_int=\count144
+)
+No file book.aux.
+\openout1 = `book.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for EU1/lmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T3/cmr/m/n on input line 9.
+LaTeX Font Info:    Try loading font information for T3+cmr on input line 9.
+(/usr/share/texmf/tex/latex/tipa/t3cmr.fd
+File: t3cmr.fd 2001/12/31 TIPA font definitions
+)
+LaTeX Font Info:    ... okay on input line 9.
+.................................................
+. fontspec info: "setup-math"
+. 
+. Adjusting the maths setup (use [no-math] to avoid this).
+.................................................
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 9.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 9.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 9.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 9.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 9.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 9.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 9.
+LaTeX Font Info:    Redeclaring math accent \check on input line 9.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 9.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 9.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 9.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 9.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 9.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
+(Font)              `operators' in the math version `normal' on input line 9.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> EU1/lmr/m/n on input line 9.
+LaTeX Font Info:    Encoding `OT1' has changed to `EU1' for symbol font
+(Font)              `operators' in the math version `bold' on input line 9.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/m/n on input line 9.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  EU1/lmr/m/n --> EU1/lmr/m/n on input line 9.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> EU1/lmr/m/it on input line 9.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> EU1/lmr/bx/n on input line 9.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> EU1/lmss/m/n on input line 9.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/m/n on input line 9.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  EU1/lmr/m/n --> EU1/lmr/bx/n on input line 9.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> EU1/lmr/bx/it on input line 9.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> EU1/lmss/bx/n on input line 9.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> EU1/lmtt/bx/n on input line 9.
+\c@lstlisting=\count145
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: twoside 
+* h-part:(L,W,R)=(79.6678pt, 438.17227pt, 79.6678pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=438.17227pt
+* \textheight=674.33032pt
+* \oddsidemargin=7.39781pt
+* \evensidemargin=7.39781pt
+* \topmargin=-18.78552pt
+* \headheight=12.0pt
+* \headsep=19.8738pt
+* \topskip=11.0pt
+* \footskip=27.46295pt
+* \marginparwidth=106.0pt
+* \marginparsep=7.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidetrue
+* \@mparswitchtrue
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(./mybody.tex
+\openout2 = `ch01-ADT.aux'.
+
+ (./ch01-ADT.tex
+! Undefined control sequence.
+\chaptername ->第\CJKnumber 
+                             {\thechapter }章
+l.11 \chapter{抽象数据类型：信息隐藏}
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+第{1}章 1.
+! Undefined control sequence.
+\chaptername ->第\CJKnumber 
+                             {\thechapter }章
+l.11 \chapter{抽象数据类型：信息隐藏}
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+\g__fontspec_family_STXihei_int=\count146
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font LiSu/B (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font SimHei/I (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font STXihei/BI (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'STXihei(0)' created for font 'STXihei' with options
+. [Script={CJK},BoldFont={SimHei},ItalicFont={LiSu}].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.: <->"STXihei/OT:script=hani;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: - 'bold' (bx/n) with NFSS spec.:
+. <->"SimHei/OT:script=hani;language=DFLT;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.: - 'italic' (m/it) with NFSS
+. spec.: <->"LiSu/OT:script=hani;language=DFLT;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+.................................................
+! Undefined control sequence.
+\chapterformat ->\prechaptername \CJKnumber 
+                                            {\thechapter }\postchaptername 
+l.11 \chapter{抽象数据类型：信息隐藏}
+                                                
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.19 仅举几例，\prop
+                         {ANSI-C} 就有 \ccode{int}，\ccode{double} 和 \c...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font STSong/BI (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font STSong/B (it probably doesn't exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font STSong/I (it probably doesn't exist).
+.................................................
+LaTeX Font Info:    Try loading font information for EU1+lmtt on input line 19.
+
+(/usr/share/texlive/texmf-dist/tex/latex/euenc/eu1lmtt.fd
+File: eu1lmtt.fd 2009/10/30 v1.6 Font defs for Latin Modern
+)
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'STSong(1)' created for font 'STSong' with options
+. [Script={CJK}].
+. 
+. This font family consists of the following NFSS series/shapes:
+. - 'normal' (m/n) with NFSS spec.: <->"STSong/OT:script=hani;language=DFLT;"
+. - 'small caps'  (m/sc) with NFSS spec.: 
+.................................................
+LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <10.95> not available
+(Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 19.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <10.95> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 24.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <9> on input line 30.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 30.
+
+! Undefined control sequence.
+l.35 数据类型就是值（\prop
+                                  {value}）的集合
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.46 在这方面，\prop
+                         {ANSI-C} 中的 \ccode{int} 就做得不太好：
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.51 一般我们会用结构体来定义\addindex
+                                                  {线性表}中的元素
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 53.
+[1
+
+
+
+
+
+
+
+]
+! Undefined control sequence.
+<argument> ...ction . \ \fi 一个例子：\cemph 
+                                                  {Set}
+l.86 \section{一个例子：\cemph{Set}}
+                                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> 一个例子：\cemph 
+                                 {Set}
+l.86 \section{一个例子：\cemph{Set}}
+                                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...ction . \ \fi 一个例子：\cemph 
+                                                  {Set}
+l.86 \section{一个例子：\cemph{Set}}
+                                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...el \ttl@a \fi 一个例子：\cemph 
+                                                  {Set}}{\thepage }}
+l.86 \section{一个例子：\cemph{Set}}
+                                         
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \cemph 
+                       
+l.88 ...��个例子我们考虑一个带有 \cemph
+                                                  {add}、
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.89 \cemph
+           {find} 和 \cemph{drop} 操作的元素\addindex{集合}\footnote{
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \cemph 
+                       
+l.89 \cemph{find} 和 \cemph
+                            {drop} 操作的元素\addindex{集合}\footnote{
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.89 ... 和 \cemph{drop} 操作的元素\addindex
+                                                  {集合}\footnote{
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...ignorespaces  不幸的是，\cemph 
+                                                  {remove} 是一个用来�...
+l.91 ...就不能再包含 \cemph{stdio.h} 了。}
+                                                  。
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \prop 
+                      
+l.91 ...就不能再包含 \cemph{stdio.h} 了。}
+                                                  。
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \prop 
+                      
+l.91 ...就不能再包含 \cemph{stdio.h} 了。}
+                                                  。
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \cemph 
+                       
+l.91 ...就不能再包含 \cemph{stdio.h} 了。}
+                                                  。
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.93 。\cemph
+              {find} 可以被用来实现 \cemph{contains}，它告诉我�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \cemph 
+                       
+l.93 。\cemph{find} 可以被用来实现 \cemph
+                                                 {contains}，它告诉我�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \cemph 
+                       
+l.97 创建了一个头文件 \cemph
+                                    {Set.h}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \cemph 
+                       
+l.112 ...�明：无论我们包含多少次 \cemph
+                                                  {Set.h}，
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.113 \prop
+           {C} 编译器只会看到它一次。
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.114 ...文件的技术是非常标准的，\prop
+                                                  {GNU C} 编译器可以识...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \cemph 
+                       
+l.115 ...�定义了的时候不会再访问 \cemph
+                                                  {Set.h}。
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.117 \cemph
+            {Set.h} 是完整的，但是它有用么？我们几乎不能�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `ch:DynamicTypeChecking' on page 2 undefined on input 
+line 128.
+
+! Undefined control sequence.
+<recently read> \cemph 
+                       
+l.135 ...�集合和元素。并且我们在 \cemph
+                                                  {new.h} 中
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Font shape `EU1/STSong(0)/m/sl' in size <10.95> not availab
+le
+(Font)              Font shape `EU1/STSong(0)/m/it' tried instead on input line
+ 139.
+[2]
+! Undefined control sequence.
+<recently read> \cemph 
+                       
+l.141 就像 \cemph
+                   {Set.h} 一样，这个文件被预处理符号 \ccode{NE...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \prop 
+                      
+l.148 ...} 和 \ccode{delete()} 大体上是 \prop
+                                                  {ANSI-C} 函数 \ccode{cal...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Font shape `EU1/lmss/bx/it' in size <17.28> not available
+(Font)              Font shape `EU1/lmss/bx/sl' tried instead on input line 153
+.
+
+LaTeX Font Warning: Font shape `EU1/STXihei(0)/bx/it' undefined
+(Font)              using `EU1/STXihei(0)/bx/n' instead on input line 153.
+
+! Undefined control sequence.
+<recently read> \prop 
+                      
+l.155 如果我们需要收集一个 \prop
+                                          {set}中任何感兴趣的东西�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \cemph 
+                       
+l.156 \cemph
+            {Object.h} 中描述另外一个抽象数据类型 \ccode{Object...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \cemph 
+                       
+l.174 ...�，我们就可以写一个程序 \cemph
+                                                  {main.c}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[3]
+! Undefined control sequence.
+<argument> ...ction . \ \fi 一个实现：\cemph 
+                                                  {Set}
+l.218 \section{一个实现：\cemph{Set}}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> 一个实现：\cemph 
+                                 {Set}
+l.218 \section{一个实现：\cemph{Set}}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...ction . \ \fi 一个实现：\cemph 
+                                                  {Set}
+l.218 \section{一个实现：\cemph{Set}}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...el \ttl@a \fi 一个实现：\cemph 
+                                                  {Set}}{\thepage }}
+l.218 \section{一个实现：\cemph{Set}}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.219 \cemph
+            {main.c} 可以正确编译，但是我们在链接并且执行�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \cemph 
+                       
+l.226 \cemph
+            {Set.c} 中。集合和对象有相同的表示，所以 \ccode{...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \prop 
+                      
+l.257 我们简单的使用 \prop
+                                 {ANSI-C} 的 \ccode{assert()} 宏来标记�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `ch:Exceptions' on page 4 undefined on input line 261.
+
+
+[4] [5]
+! Undefined control sequence.
+<argument> ...on . \ \fi 另一个实现：\cemph 
+                                                  {Bag}
+l.363 \section{另一个实现：\cemph{Bag}}
+                                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> 另一个实现：\cemph 
+                                    {Bag}
+l.363 \section{另一个实现：\cemph{Bag}}
+                                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...on . \ \fi 另一个实现：\cemph 
+                                                  {Bag}
+l.363 \section{另一个实现：\cemph{Bag}}
+                                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\ttl@a \fi 另一个实现：\cemph 
+                                                  {Bag}}{\thepage }}
+l.363 \section{另一个实现：\cemph{Bag}}
+                                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \cemph 
+                       
+l.365 不需要修改 \cemph
+                            {Set.h} 中提供的接口我们便可以更改�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \cemph 
+                       
+l.375 此时的数据结构就叫做 \cemph
+                                           {Bag}，也就是有引用次数�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[6]
+! Undefined control sequence.
+<recently read> \prop 
+                      
+l.399 ——在 \prop
+                     {ANSI-C} 中空指针也可以传给 \ccode{free()} 函...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[7]
+
+LaTeX Warning: Reference `sec:adtApp' on page 8 undefined on input line 467.
+
+[8])
+\openout2 = `ch02-Dyln.aux'.
+
+ (./ch02-Dyln.tex
+! Undefined control sequence.
+\chaptername ->第\CJKnumber 
+                             {\thechapter }章
+l.11 \chapter{动态链接：通用函数}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+第{2}章 2.
+! Undefined control sequence.
+\chaptername ->第\CJKnumber 
+                             {\thechapter }章
+l.11 \chapter{动态链接：通用函数}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+\chapterformat ->\prechaptername \CJKnumber 
+                                            {\thechapter }\postchaptername 
+l.11 \chapter{动态链接：通用函数}
+                                          
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <9> not available
+(Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 31.
+
+LaTeX Warning: Reference `ch:AbstractDateTypes' on page 9 undefined on input li
+ne 36.
+
+[9
+
+
+
+
+]
+
+LaTeX Warning: Reference `sec:constrdestr' on page 10 undefined on input line 9
+6.
+
+! Undefined control sequence.
+<recently read> \prop 
+                      
+l.144 当然这里我们用的是纯 \prop
+                                          {C} 函数，所以 \ccode{self}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[10]
+
+LaTeX Warning: Reference `sec:atom' on page 11 undefined on input line 200.
+
+! Undefined control sequence.
+<recently read> \cemph 
+                       
+l.203 用文件 \cemph
+                      {stdarg.h} 里的宏 \ccode{va_start()} 对 \ccode{va_...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[11]
+
+LaTeX Warning: Reference `sec:atom' on page 12 undefined on input line 233.
+
+
+LaTeX Warning: Reference `ch:DynamicTypeChecking' on page 12 undefined on input
+ line 253.
+
+! Undefined control sequence.
+<recently read> \prop 
+                      
+l.272 例如在 \prop
+                     {Pascal} 中 \ccode{write()} 函数处理不同的参�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.273 \prop
+           {C} 中的 \ccode{+} 操作符能使用在整型、指针或浮�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \prop 
+                      
+l.279 并且 \prop
+                  {C} 编译器能产生如同 \ccode{+} 产生的那样的�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \prop 
+                      
+l.280 但是 \prop
+                  {C} 编译器能根据不同的
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \prop 
+                      
+l.303 \ccode{sizeof} 是一个 \prop
+                                    {C} 的操作符，
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[12]
+! Undefined control sequence.
+l.313 \cemph
+            {String.h} 定义了如下抽象数据类型：
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `sec:memoryman' on page 13 undefined on input line 319
+.
+
+! Undefined control sequence.
+<recently read> \cemph 
+                       
+l.320 \cemph
+            {new.h} 中：
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \prop 
+                      
+l.353 }
+       的大小
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...ction . \ \fi 一个实现：\cemph 
+                                                  {String}
+l.365 \section{一个实现：\cemph{String}}
+                                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> 一个实现：\cemph 
+                                 {String}
+l.365 \section{一个实现：\cemph{String}}
+                                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...ction . \ \fi 一个实现：\cemph 
+                                                  {String}
+l.365 \section{一个实现：\cemph{String}}
+                                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...el \ttl@a \fi 一个实现：\cemph 
+                                                  {String}}{\thepage }}
+l.365 \section{一个实现：\cemph{String}}
+                                             
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[13]
+! Undefined control sequence.
+l.449 \cemph
+            {String.c} 包含了 \cemph{String.h} 和 \cemph{new.h} 中的�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[14]
+! Undefined control sequence.
+<recently read> \cemph 
+                       
+l.449 \cemph{String.c} 包含了 \cemph
+                                       {String.h} 和 \cemph{new.h} 中的�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \cemph 
+                       
+l.449 ....c} 包含了 \cemph{String.h} 和 \cemph
+                                                  {new.h} 中的公共声明。
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \cemph 
+                       
+l.450 ...�，它也包含了私有头文件 \cemph
+                                                  {new.r}，
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.451 \cemph
+            {new.r} 中包括了在 \ref{sec:msgcls} 节中说明的
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+LaTeX Warning: Reference `sec:msgcls' on page 15 undefined on input line 451.
+
+! Undefined control sequence.
+<argument> ...on . \ \fi 另一个实现：\cemph 
+                                                  {Atom}
+l.455 \section{另一个实现：\cemph{Atom}}
+                                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> 另一个实现：\cemph 
+                                    {Atom}
+l.455 \section{另一个实现：\cemph{Atom}}
+                                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...on . \ \fi 另一个实现：\cemph 
+                                                  {Atom}
+l.455 \section{另一个实现：\cemph{Atom}}
+                                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<argument> ...\ttl@a \fi 另一个实现：\cemph 
+                                                  {Atom}}{\thepage }}
+l.455 \section{另一个实现：\cemph{Atom}}
+                                              
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+[15] [16])) (./myfooter.tex) (./book.aux (./ch01-ADT.aux) (./ch02-Dyln.aux))
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 20714 strings out of 493638
+ 402314 string characters out of 6146797
+ 515010 words of memory out of 5000000
+ 23933 multiletter control sequences out of 15000+600000
+ 7579 words of font info for 62 fonts, out of 8000000 for 9000
+ 1328 hyphenation exceptions out of 8191
+ 60i,8n,93p,10451b,996s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on book.pdf (16 pages).

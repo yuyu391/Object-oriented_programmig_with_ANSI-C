@@ -1,0 +1,57 @@
+%% STSong Font:
+\usepackage{xeCJK}
+
+% \setCJKmainfont{} % 设置 CJK 主字体，也就是设置 \rmfamily 的 CJK 字体
+% \setCJKsansfont{} % 设置 CJK 无衬线的字体，也就是设置 \sffamily 的 CJK 字体
+% \setCJKmonofont{} % 设置 CJK 的等宽字体，也就是设置 \ttfamily 的 CJK 字体
+
+\setCJKmainfont[BoldFont=STZhongsong, ItalicFont=STFangsong]{STSong} %BoldFont 粗体字 % ItalicFont 斜体字
+\setCJKsansfont[BoldFont=SimHei, ItalicFont=LiSu]{STXihei} % SimXX
+% \setCJKsansfont[BoldFont=STXinwei, ItalicFont=STXingkai]{STKaiti}
+\setCJKmonofont{STSong} % SIMYOU常规幼圆字体
+
+
+\usepackage{indentfirst} % 首行缩进
+\setlength{\parindent}{2.0em} % 首行缩进两字符
+% Maybe useless when using zhspacing, the default in zhspacing is 2em.
+
+\usepackage[pagestyles]{titlesec} % 标题
+\usepackage{titletoc}
+
+%% C代码编辑格式part01
+\usepackage{xcolor} % 颜色
+\usepackage{framed} % 代码背景色
+\usepackage{verbatim} % 代码
+\definecolor{shadecolor}{gray}{0.85} % 代码背景色灰色
+
+%% C代码编辑格式part02
+\usepackage{listings}
+\lstset{
+language=[ANSI]C,
+basicstyle=\ttfamily\small\linespread{1}\selectfont,
+numbers=left,
+numberstyle=\footnotesize,
+numbersep=10pt,
+numberfirstline=false,
+numbersep=0.5em,
+stepnumber=1,
+breaklines=true,
+extendedchars=false,
+tabsize=4,
+xleftmargin=2em,
+% xrightmargin=0em,
+% framexleftmargin=-10mm,
+% framexrightmargin=-10mm,
+% frame=none,
+backgroundcolor=\color[RGB]{240,240,240},
+keywordstyle=\bfseries\color{blue},
+% identifierstyle=,
+numberstyle=\color[RGB]{0,192,192},
+commentstyle=\slshape\color[RGB]{0,96,96},
+stringstyle=\color[RGB]{128,0,0},
+% title=\lstname,
+showstringspaces=false
+}
+
+%% 页边距设置
+\usepackage[top=3.0cm,bottom=3.0cm,left=2.8cm,right=2.8cm]{geometry}

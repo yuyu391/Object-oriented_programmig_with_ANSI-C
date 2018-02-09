@@ -1,0 +1,37 @@
+This is makeindex, version 2.15 [TeX Live 2015] (kpathsea + Thai support).
+Scanning input file title.tex...
+!! Input index error (file = title.tex, line = 1):
+   -- Unknown index keyword \documentclass.
+!! Input index error (file = title.tex, line = 2):
+   -- Unknown index keyword \begin.
+!! Input index error (file = title.tex, line = 3):
+   -- Unknown index keyword \title.
+!! Input index error (file = title.tex, line = 4):
+   -- Unknown index keyword \author.
+!! Input index error (file = title.tex, line = 5):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = title.tex, line = 6):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = title.tex, line = 7):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = title.tex, line = 8):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = title.tex, line = 9):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = title.tex, line = 10):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = title.tex, line = 11):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = title.tex, line = 12):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = title.tex, line = 13):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = title.tex, line = 14):
+   -- Unknown index keyword \date.
+!! Input index error (file = title.tex, line = 16):
+   -- Missing arguments -- need two (premature LFD).
+!! Input index error (file = title.tex, line = 18):
+   -- Unknown index keyword \end.
+done (0 entries accepted, 16 rejected).
+Nothing written in title.ind.
+Transcript written in title.ilg.

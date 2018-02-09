@@ -1,0 +1,22 @@
+
+%% C代码编辑格式part03
+\newcommand{\ccode}[1]{\lstinline[basicstyle=\ttfamily\bfseries]{#1}}
+
+%% 章节显示格式part01
+\renewcommand{\chaptername}{第\CJKnumber{\thechapter}章}
+\newcommand{\prechaptername}{第}
+\newcommand{\postchaptername}{章}
+\newcommand{\chapterformat}{\prechaptername\CJKnumber{\thechapter}\postchaptername}
+
+%% 章节显示格式part02
+\titleformat{\chapter}[display]
+{\normalfont\flushright\huge\sffamily\bfseries}
+{\chapterformat}
+{20pt}
+{\huge}
+
+\titleformat{\section}
+{\normalfont\flushleft\LARGE\sffamily\bfseries}
+{\thesection}
+{11pt}
+{\LARGE}
