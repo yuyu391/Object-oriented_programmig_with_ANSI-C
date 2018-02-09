@@ -16,6 +16,6 @@ sudo apt-get install latex-cjk-all
 
 	执行以下几条命令更新系统字体缓存：
 	cd /usr/share/fonts/windows/  
-sudo mkfontscale  
-sudo mkfontdir  
-sudo fc-cache -fv
+	sudo mkfontscale  
+	sudo mkfontdir  
+	sudo fc-cache -fv
