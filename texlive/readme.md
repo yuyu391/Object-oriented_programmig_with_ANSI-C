@@ -1,9 +1,9 @@
 # TeLaTex Unbuntu 16.04 安装相关
 
 ## 1 安装命令
-sudo apt-get update
-sudo apt-get install texlive-full
-sudo apt-get install latex-cjk-all 
+	sudo apt-get update
+	sudo apt-get install texlive-full
+	sudo apt-get install latex-cjk-all 
 ## 2 中文字体设置
 ### 2.1安装Windows中文字体
 
