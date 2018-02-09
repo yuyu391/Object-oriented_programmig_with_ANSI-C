@@ -109,41 +109,404 @@ static enum tokens scan (const char * buf)
 }
 \end{lstlisting}
 
-我们通过输入的地址或者空指针调用scan()函数来继续运行。
-为了求出符合ANSI-C 标准的strtod()函数中的浮点数，
-我们忽略了空格，和首要的数字或小数点。其它的任何特性仍不变，% TODO
-并且我们不会在输入的缓冲提前输出以前的空位。
+我们调用 scan() ，可传递输入行缓冲的地址，
+或传进一个空指针得以继续工作在当前的行。
+空格被忽略，并且遇到第一个为数字或小数点，
+我们就是用一个ANSI-C 的函数 strtod() 开始提取出浮点数字。
+若为其他的任何字符将被返回，并且我们不会预先在输入缓冲传递一个空字节。
+
+
+scan() 的结果被存储在全局变量token ——这样简化了识别程序（识别器）。
+如果我们侦测出一个数字，我们将返回唯一的值 NUMBER 并使得在全局变量number 
+中实际的值有效。
 
 
 % \section{The Recognizer}
 \section{识别器}
 \label{sec:recogn}
+在最高水平,表达式通过函数sum() 被识别，
+sum() 函数内部调用scan() 并返回一个表示，
+这个表示可通过调用 process() 
+被处理并通过delete() 被回收。
 
-\ccode{scan()} 函数的结果被存取在全局变量中
-——这简化了识别器的工作。
-如果我们发现了一个数值，
-我们就返回它的唯一值并且确保它的全局变量有效。
+
+如果我们不使用yacc(是Unix/Linux上一个用来生成编译器的编译器（编译器代码生成器）），
+我们将通过递归下降的方法识别表达式，
+合乎语义的规则被翻译成等价的C函数。
+例如：一个sum 是一个产物，接下来被0跟随，或更多的组，
+每个由额外的操作符和另外的产物组成，一个语义规则如下：
+
+\begin{center}
+sum: product\{+|- product\}...
+\end{center}
+
+其被翻译成C函数如下：
+
+\begin{lstlisting}
+static void * sum (void)
+{
+    void * result = product();
+    for(;;)
+    {
+        switch (token)
+        {
+            case '+':
+            case '-':
+                scan(0), product();continue;
+            return;
+        }
+    }
+}
+\end{lstlisting}
+
+对于每一个语义规则有一个C函数，
+以便于这些规则能够相互调用，
+这些不同的分支被转换成switch 或 if 语句，
+迭代的语法将在C中翻译成循环。仅仅一个问题就是我们必须避免无限的递归。
+
+token 总是包含下一个输入的符号。如果我们识别出它，我们必须调用scan(0)。
 
 % \section{The Processor}
-\section{The Processor}<++>
+\section{The Processor 处理器}
+我们如何来处理表达式呢？
+如果我们仅仅想用一些用数字表示的值执行简单的算术。
+我们可以扩展识别函数并且一旦识别出操作符和操作码就计算出结果
+如：sum() 应该会期望从每一个对 product() 的调用期望一个double 类型的结果，
+尽可能的执行加或减法，并且返回结果，再次作为一个double 类型函数的值。
+
+如果我们想要建立一个系统用来处理更加复杂的表达式，
+我们需要存储表达式以便于后续处理。
+在这种情况下，我们能够不仅仅执行算术，
+而且可以允许决定并且有条件的评估一个表达式的一部分，
+且可用存储的表达式作为用户的函数包含在其他表达式中。
+我们所需要的是一个合理通用的方式代表一个表达式。
+比较常规的技术是使用一个二叉树在每一个节点上存储 token.
+\begin{lstlisting}
+struct Node{
+    enum tokens token;
+    struct Node * left, * right;
+};
+\end{lstlisting}
+
+然而，这样并不是很灵活。
+我们需要介绍一个union 去创建一个节点，
+在这个节点上我们可存储一个数，
+并且我们在这些节点代表的一元操作符上浪费了空间。
+此外，process() 和 delete() 将包含witch 分支，
+并witch 分支会随着我们增加的符号而增多。
 
 % \section{Information Hiding}
-\section{信息隐藏}<++>
+\section{Information Hiding 信息隐藏}
+应用迄今为止我们学到的，
+我们绝不去揭示节点结构。
+相反，我们先在头文件 value.h中放置一些声明如下：
+\begin{lstlisting}
+const void * Add;
+...
+void * new(const void * type, ...);
+void process(const void * tree);
+void delete(void * tree);
+\end{lstlisting}
+
+现在我们可以编写代码 sum() 如下：
+\begin{lstlisting}
+#include "value.h"
+static void * sum(void)
+{
+    void * result = product();
+    const void * type;
+    
+    for (;;)
+    {
+        switch (token)
+        {
+            case '+':
+                type = Add;
+                break;
+            case '+':
+                type = Sub;
+                break;
+            default:
+                return result;
+        }
+        scan(0);
+        result = new(type, result, product());
+    }
+}
+\end{lstlisting}
+
+product() 与 sum() 有相同的结构，
+并且调用 一个函数 factor() 去识别数字，符号，且sum被赋予了括号：
+\begin{lstlisting}
+static void * factor(void)
+{
+    void * result;
+    
+    switch (token)
+    {
+        case '+':
+            scan(0);
+            return factor();
+        case '-':
+            scan(0);
+            return factor();
+        default:
+            error("bad factor: '%c' 0x%x", token, token);
+        case NUMBER:
+            result = new(Value, number);
+            break;
+        case '(':
+            scan(0);
+            result = sum();
+            if (token != ')')
+                 error("expecting )");
+    }
+    scan(0);
+    return result;
+}
+\end{lstlisting}
+
+尤其在 factor() 中，我们需要特别小心的保持扫描器
+（scanner）是不变的：token 必须总是包含下一个输入的符号。
+一旦token 被使用，我们需要调用 scan(0)。
 
 % \section{Dynamic Linkage}
-\section{Dynamic Linkage}<++>
+\section{Dynamic Linkage 动态链接}
+ 识别器是完善的。value.h 对于算术表达式完全隐藏了求值程序，
+ 且与此同时指定了我们必须所实现的。 new() 携带描述符，如Add 
+ 和合适的参数如指针对加的操作且返回一个表示和的指针。
+\begin{lstlisting}
+struct Type {
+    void * (* new) (va_list ap);
+    double (* exec) (const void * tree);
+    void (* delete) (void * tree);
+};
+ 
+void * new (const void * type, ...)
+{    
+    va_list ap;
+    void * result;
+    
+    assert(type && ((struct Type *) type) -> new);
+    
+    va_start(ap, type);
+    result = ((struct Type *) type) -> new(ap);
+    * (const struct Type **) result = type;
+    va_end(ap);
+    return result;
+}
+\end{lstlisting}
+
+我们使用动态连接并传递一个对指定节点例程的调用，
+在例程中的Add 分支处，必须常见一个节点，并且传进两个指针。
+\begin{lstlisting}
+struct Bin {
+    const void * type;
+    void * left, * right;
+};   
+ 
+static void * mkBin (va_list ap)
+{    
+    struct Bin * node = malloc(sizeof(struct Bin));
+ 
+    assert(node);
+    node -> left = va_arg(ap, void *);
+    node -> right = va_arg(ap, void *);
+    return node;
+}
+\end{lstlisting}
+
+注意，只有 mkBin() 知道它创建的是什么。
+所有我们要求的是各个节点对于动态连接是以一个指针开始。
+这个指针被 new() 传进一遍于delete() 能够调用到它指定节点的函数：
+\begin{lstlisting}
+void delete (void * tree)
+{
+    assert(tree && * (struct Type **) tree
+        && (* (struct Type **) tree) -> delete);
+ 
+    (* (struct Type **) tree) -> delete(tree);
+}
+\end{lstlisting}
+
+动态连接很优雅的避免了复杂难解的节点。
+.new() 精确的创建了每个类型描述符的右节点：
+二元操作符拥有两个子孙。一元操作符拥有一个子孙，
+且值节点仅仅包含了值。
+delete() 是一个非常简单的函数因为每个节点处理它自己的销毁过程：
+二元操作符删除两个子树并且释放他们自己的节点，
+一元操作符仅仅删除一个子树，且值节点仅仅释放自己。
+变量和常量甚至可以留到后面——对于delete() 的回应他们简单的什么也不做。
+
 
 % \section{A Postfix Writer}
-\section{A Postfix Writer}<++>
+\section{A Postfix Writer}
+ 到目前为止我们还没有真正的决定 process() 将要真正做什么。
+ 如果我们想要发布一个表达式的后缀版，
+ 我们将要对 struct Type 增加一个字符串以便于显示出实际的操作符，
+ 且 process() 将要安排一个单独的被tab 键缩进的行：
+\begin{lstlisting}
+void process (const void * tree)
+{
+    putchar('/t');
+    exec(tree, (* (struct Type **) tree) -> rank, 0);
+    putchar('/n');
+}
+\end{lstlisting}
+
+exec() 处理动态连接
+\begin{lstlisting}
+static void exec (const void * tree, int rank, int par)
+{
+    assert(tree && * (struct Type **) tree
+        && (* (struct Type **) tree) -> exec);
+    
+    (* (struct Type **) tree) -> exec(tree, rank, par);
+}
+\end{lstlisting}
+
+每一个二元操作符被使用如下函数发出：
+\begin{lstlisting}
+static void doBin(const void *tree)
+{
+    exec(((struct Bin *) tree) —> left);
+    printf(" %s", (* (struct Type **) tree) —> name);
+    exec(((struct Bin *) tree) —> right);
+}
+\end{lstlisting}
+
+类型描述符如下绑定：
+\begin{lstlisting}
+static struct Type _Add = { "+", mkBin, doBin, freeBin };
+static struct Type _Sub = { "—", mkBin, doBin, freeBin };
+const void * Add = & _Add;
+const void * Sub = & _Sub;
+\end{lstlisting}
+
+应该很容易猜测一个数值是怎样被实现的。它被代表作为一个结构体携带double 类型的信：
+\begin{lstlisting}
+struct Val {
+    const void * type;
+    double value;
+};
+static void * mkVal (va_list ap)
+{
+    struct Val * node = malloc(sizeof(struct Val));
+    assert(node);
+    node —> value = va_arg(ap, double);
+    return node;
+}
+\end{lstlisting}
+
+处理组成的打印值：
+\begin{lstlisting}
+static void doVal (const void * tree)
+{
+    printf(" %g", ((struct Val *) tree) —> value);
+}
+\end{lstlisting}
+
+我们已经做了——没有子树要删除，因此我们可以使用库函数 free() 直接的删除值节点：
+\begin{lstlisting}
+static struct Type _Value = { "", mkVal, doVal, free };
+const void * Value = & _Value;
+\end{lstlisting}
+
+一元操作符如Minus 将留作练习。
 
 % \section{Arithmetic}
-\section{Arithmetic}<++>
+\section{Arithmetic}
+如果我们想做算术运算，我们让执行的函数返回一个double 类型的值，然后让process() 打印这个值：
+\begin{lstlisting}
+static double exec (const void * tree)
+{
+    return (* (struct Type **) tree) —> exec(tree);
+}
+void process (const void * tree)
+{
+    printf("/t%g/n", exec(tree));
+}
+\end{lstlisting}
+
+对于每个节点的类型，我们需要一个执行函数来计算和返回这个节点的值。这里有两个实例：
+\begin{lstlisting}
+static double doVal (const void * tree)
+{
+    return ((struct Val *) tree) —> value;
+}
+static double doAdd (const void * tree)
+{
+    return exec(((struct Bin *) tree) —> left) +
+    exec(((struct Bin *) tree) —> right);
+}
+static struct Type _Add = { mkBin, doAdd, freeBin };
+static struct Type _Value = { mkVal, doVal, free };
+const void * Add = & _Add;
+const void * Value = & _Value;
+\end{lstlisting}
 
 % \section{Infix Output}
-\section{Infix Output}<++>
+\section{Infix Output}
+也许对于处理算术表达式的突出点是带小括号的形式打印。
+这通常是有点滑稽的，依照谁来负责发出括号。
+此外对于操作符的名字用于前缀输出，我们增加了两个数值到struct Type中。
+\begin{lstlisting}
+struct Type {
+    const char * name; /* node’s name */
+    char rank, rpar;
+    void * (* new) (va_list ap);
+    void (* exec) (const void * tree, int rank, int par);
+    void (* delete) (void * tree);
+};
+\end{lstlisting}
+
+.rank 是优先的操作符，以1开始，此外 .rpar 被设置用于操作符，
+如减操作，此操作如果用于相等的优先级的操作就要求他们的右操作被附上括号。
+\begin{lstlisting}
+$ infix
+1 + (2 — 3)
+1 + 2 — 3
+1 — (2 — 3)
+1 — (2 — 3)
+\end{lstlisting}
+
+这个证实了我们需要如下的初始化：
+\begin{lstlisting}
+static struct Type _Add = {"+", 1, 0, mkBin, doBin, freeBin};
+static struct Type _Sub = {"—", 1, 1, mkBin, doBin, freeBin};
+\end{lstlisting}
+
+滑稽的部分是对于二元节点得去决定它是否必须要增加括号。
+一个二元节点如加法，被给予它自己较高的优先级并且一个标记指示
+在相等的优先级中括号是否是必须的。doBin() 去判别是否使用括号:
+\begin{lstlisting}
+static void doBin (const void * tree, int rank, int par)
+{
+    const struct Type * type = * (struct Type **) tree;
+    par = type —> rank < rank || (par && type —> rank == rank);
+    
+    if (par)
+    putchar(’(’);
+    exec(((struct Bin *) tree) —> left, type —> rank, 0);
+    printf(" %s ", type —> name);
+    exec(((struct Bin *) tree) —> right, type —> rank, type —> rpar);
+    if (par)
+    putchar(’)’);
+}
+\end{lstlisting}
+
+与高优先级的操作符比若我们有一个较低优先级，
+或者如果我们被要求在相等的优先级情况下输出括号，
+我们就打印括号。在任何情况下，如果我们的描述有 .rpar 的设置，
+我们要求仅仅我们的所有操作输出额外的括号如上：
+
+保持打印的实例程序是较容易写的。
 
 % \section{Summary}
 \section{小结}
+三种不同的处理器证实了信息隐藏的优越性。
+动态连接帮助我们把一个问题分解成很简单的函数功能点。
+最终的程序是很容易扩展的——试着去增加C语言中的比较和如?:的操作符吧。  
 
 
 \newpage{\thispagestyle{empty}\cleardoublepage}
