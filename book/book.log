@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.2.6)  9 FEB 2018 22:46
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.2.6)  1 APR 2018 17:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1972,17 +1972,18 @@ Missing character: There is no ― in font [lmroman10-regular]:mapping=tex-text!
 
 
 
-] [44])
+] [44] [45] [46] [47] [48] [49] [50
+
+])
 \openout2 = `ch06-Hier.aux'.
 
  (./ch06-Hier.tex
 第\CJKnumber {6}章 6.
-[45
+[51
 
 
 
-
-] [46])
+] [52])
 \openout2 = `ch07-preproc.aux'.
 
  (./ch07-preproc.tex
@@ -1991,95 +1992,95 @@ LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <20.74> not available
 (Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `EU1/lmtt/bx/sl' in size <20.74> not available
 (Font)              Font shape `EU1/lmtt/b/sl' tried instead on input line 11.
-[47
+[53
 
 
 
 
-] [48])
+] [54])
 \openout2 = `ch08-DyTC.aux'.
 
  (./ch08-DyTC.tex
 第\CJKnumber {8}章 8.
-[49
+[55
 
 
 
 
-] [50])
+] [56])
 \openout2 = `ch09-statc.aux'.
 
  (./ch09-statc.tex
 第\CJKnumber {9}章 9.
-[51
+[57
 
 
 
 
-] [52
+] [58
 
 ])
 \openout2 = `ch10-Deleg.aux'.
 
  (./ch10-Deleg.tex
 第\CJKnumber {10}章 10.
-[53
+[59
 
 
 
-] [54])
+] [60])
 \openout2 = `ch11-Methods.aux'.
 
  (./ch11-Methods.tex
 第\CJKnumber {11}章 11.
-[55
+[61
 
 
 
 
-] [56
+] [62
 
 ])
 \openout2 = `ch12-persis.aux'.
 
  (./ch12-persis.tex
 第\CJKnumber {12}章 12.
-[57
+[63
 
 
 
-] [58])
+] [64])
 \openout2 = `ch13-Except.aux'.
 
  (./ch13-Except.tex
 第\CJKnumber {13}章 13.
-[59
+[65
 
 
 
 
-] [60
+] [66
 
 ])
 \openout2 = `ch14-fwMsg.aux'.
 
  (./ch14-fwMsg.tex
 第\CJKnumber {14}章 14.
-[61
+[67
 
 
 
-] [62]) (./apdA-Hints.tex
+] [68]) (./apdA-Hints.tex
 附录 A.
-[63
+[69
 
 
 
-] [64] [65]
+] [70] [71]
 Underfull \vbox (badness 1472) has occurred while \output is active []
 
- [66]
-[67] [68] [69] [70
+ [72]
+[73] [74] [75] [76
 
 ])
 \openout2 = `apdB-Prepr.aux'.
@@ -2092,18 +2093,18 @@ Overfull \hbox (4.71896pt too wide) in paragraph at lines 13--23
 cribed the result in [[]].
  []
 
-[71
+[77
 
 
-] [72] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+] [78] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-[73] [74])
+[79] [80])
 \openout2 = `apdC-Manual.aux'.
 
  (./apdC-Manual.tex
 附录 C.
-[75
+[81
 
 
 
@@ -2113,21 +2114,21 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 LaTeX Font Warning: Font shape `EU1/STSong(0)/bx/it' undefined
 (Font)              using `EU1/STSong(0)/bx/n' instead on input line 64.
 
-[76] [77] [78
+[82] [83] [84
 
 ])
 runsystem(makeindex book.idx)...executed safely (allowed).
 
- (./book.ind) [79
+ (./book.ind) [85
 
 
 
 
-] [80
+] [86
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
- [81]
+ [87]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
  (./book.aux (./preface.aux)
 (./ch01-ADT.aux) (./ch02-Dyln.aux) (./ch03-psExpr.aux) (./ch04-inhert.aux)
@@ -2142,12 +2143,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 30962 strings out of 493638
- 556191 string characters out of 6146797
- 696783 words of memory out of 5000000
- 33861 multiletter control sequences out of 15000+600000
+ 31050 strings out of 493638
+ 557448 string characters out of 6146797
+ 696867 words of memory out of 5000000
+ 33949 multiletter control sequences out of 15000+600000
  11318 words of font info for 102 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  63i,13n,96p,10458b,1134s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on book.pdf (91 pages).
+Output written on book.pdf (97 pages).

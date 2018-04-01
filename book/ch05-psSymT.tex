@@ -10,21 +10,299 @@
 % \chapter{Programming Savvy ---Symbol Table}
 \chapter{编程常识：符号表}
 \label{ch:psSymbolTable}
+    正确的扩展结构体,并且,分享基础结构体的函数,能帮助我们避免用union的麻烦.尤其是在
+结合动态连接,我们获得一个制度和完美稳健处理发散信息的方法.一旦基础的机制确定好位置,
+那么新的扩展结构体能很容易的添加到基础机制中并且重复使用.
+    
+    作为一个示例,我们将添加关键字,常量,变量,数学表达式到第三章的小计算器中.所有添加
+的项目都生存字符号表中并且分享同样的基础名字的搜索机制.
 
 % \section{Scanning Identifiers}
-\section{标识符扫描}<++>
+\section{标识符扫描}
+    在3.2章节中,我们实现了\ccode{scan()}函数,其能从主进程接收每一行输入并且在每一次
+搜寻中维持一个输入符号.如果我们想要介绍关键字,常量等等,我们需要扩展下\ccode{scan()}.
+就像浮点数一样,我们提取字母字符串最为进一步的分析:
+\begin{lstlisting}
+#define ALNUM   "ABCDEFGHIJKLMNOPQRSTUVWXYZ" \
+                "abcdefghijklmnopqrstuvwxyz" \
+                "_" "0123456789"
+static enum tokens scan (const char * buf)
+{
+    static const char * bp;
+    if (isdigit(* bp || * bp == '.'))
+        ...
+    else if (isalpha(* bp) * bp == '_')
+    {
+        char buf [BUFSIZ];
+        int len = strspn(bp, ALNUM);
+        
+        if (len >= BUFSIZ)
+            error("name too long: %—.10s...", bp); 
+        strncpy(buf, bp, len), buf[len] = ’\0’, bp += len; 
+        token = screen(buf);
+    }
+    ...
+}
+\end{lstlisting}
+    
+    一旦我们有一个标识符,我们让\ccode{screen()}一个新的函数来决定\ccode{token}的
+取值.如果必要的,\ccode{screen()}函数会存储一个描述符到解析器可以检查的全局变量描
+述符中.
 
 % \section{Using Variables}
-\section{使用变量}<++>
+\section{使用变量}
+    一个变量参与两个操作:它的值被用作于操作数在一个表达式中,或者一个表达式的值被
+分配给它.第一个操作是一个简单\ccode{factor()}函数的延伸,其在3.5章节中作为识别器
+的一部分.
+
+\begin{lstlisting}
+static void * factor (void)
+{
+    void * result:
+    ...
+    switch (token) {
+    case VAR:
+        result = symbol;
+        break;
+    ...
+    }
+    ...
+}
+\end{lstlisting}
+
+    VAR是一个特殊的值,当一个合适的描述符被发现时\ccode{screen()}替代token的值.额外
+的关于描述符的信息是被安排于全局变量符号中.在这个例子中,符号包含一个代表作为表达式
+树的叶子变量的节点.\ccode{screen()}函数能找到任何一个在描述符表中的变量或者用描述
+符Var去创建一个.
+
+    识别某一个分配是一个bit变得更加复杂.我们的计算器是一个非常实用的,我们允许两
+种语法声明:
+\begin{lstlisting}
+asgn : sum
+    | VAR = asgn
+\end{lstlisting}
+不幸的是,VAR也能出现也sum表达式的左边,i.e.,它不能立即清楚的如何认出c-style嵌入式
+分配用我们的递归下降技术.这是因为我们想要学习如何去处理关键字不论用任何方法,我们
+设定遵循这样的语法规则:
+\begin{lstlisting}
+stmt : sum
+    | LET  VAR = sum
+\end{lstlisting}
+下面是遵循这一规则的函数实现:
+\begin{lstlisting}
+static void * stmt (void) 
+{ 
+    void * result; 
+    switch (token) 
+    { 
+    case LET: 
+        if (scan(0) != VAR) 
+            error("bad assignment"); 
+        result = symbol; 
+        if (scan(0) != ’=’) 
+            error("expecting ="); 
+        scan(0); 
+        return new(Assign, result, sum()); 
+    default: 
+        return sum(); 
+    } 
+}
+\end{lstlisting}
+
+    在中程序中,我们用\ccode{stmt()}替代\ccode{sum()}并且我们的识别器准备捕捉变量.
+\ccode{Assign}是一个新的数据类型描述符,其作为一个计算值的节点和分配值到一个变量.
+
 
 % \section{The Screener ---\cemph{Name}}
-\section{The Screener ---\cemph{Name}}<++>
+\section{The Screener ---\cemph{Name}}
+分配器遵循这样的语法:
+\begin{lstlisting}
+stmt : sum
+    | LET VAR = sum
+\end{lstlisting}
+LET 是一个关键字的例子.在building中 the screener 我们仍然能决定什么标识符将是当
+时的代表LET:\ccode{scan()}提取出一个标识符从输入行里,并把它压进\ccode{screen()}
+中,\ccode{screen()}看起来像在符号表中其返回值作为token,至少是一个变量,一个符号
+节点.
+
+    识别器丢弃LET但是它安装变量作为一个叶子节点到树上.对于其他符号,比如算术表达
+式的名字,我们将希望应用\ccode{new()}不论screener返回什么样的符号而得到一个树上的
+新节点.因此,有很多部分组成的符号表条目将会有一样动态连接树节点的函数.
+
+    作为关键字,一个\ccode{Name}需要包含输入字符串和token值.此后,我们想要从
+\ccode{Name}继承;因此,我们定义一个这样的结构体在Name.r文件中:
+\begin{lstlisting}
+struct Name {               /* base structure */
+    const void * type;      /* for dynamic linkage */
+    const char * name;      /* may be malloc-ed */
+    int token;
+};
+\end{lstlisting}
+我们的符号永不消逝:如果他们的名字包含作为预定义的关键字的字符串,那也没有关系,或
+者作为用户定义的变量的动态存储字符串--我们不会回收他们.
+
+    在我们能找到一个符号之前,我们需要把它输入符号表.这个不能通过调用
+\ccode{new(Name,...)}来处理,因为我们希望支持比Name更加复杂化的符号,我们应该隐藏
+符号表实现.替代的，我们提供了一个函数install()，它接受一个name对象并将其插入符号表
+中。下面是符号表接口文件Name.h：
+\begin{lstlisting}
+extern void * symbol;   /* -> last Name found by screen() */
+void install (const void * symbol);
+int screen (const char * name);
+\end{lstlisting}
+
+    识别器必须将关键字如let插入符号表中，在筛选器寻找它们之前。这些关键字被定义在结构
+体的常量表中--它们没有差别用于\ccode{install()}。以下函数用于初始化识别：
+\begin{lstlisting}
+#include "Name.h"
+#include "Name.r"
+
+static void initNames (void)
+{
+    static const struct Name names [] = {
+        { 0, "let", LET },
+        { 0 }};
+    const struct Name * np;
+    for (np = names; np -> name; ++np)
+        install(np);
+}
+\end{lstlisting}
+
+    注意\ccode{names[]}，关键字表，不需要排序。要定义\ccode{names[]}，我们使用
+名称的表示形式，即，我们包括Name.r。因为关键字let被丢弃，所以我们没有提供动态链接的方法。
 
 % \section{Superclass Implementation ---\cemph{Name}}
-\section{父类的实现：\cemph{Name}}<++>
+\section{父类的实现：\cemph{Name}}
+    按名称搜索符号是一个基本问题。不幸的是，ANSI标准没有定义一个合适的库函数来
+解决这个问题。\ccode{bsearch()}--排序表中的二进制搜索--接近了，但是如果我们插入
+一个新的符号，我们就必须调用\ccode{qsord()}来为进一步的搜索做好准备。
+    
+    Unix系统可能提供两个或三个功能族来处理不断增长的表。\ccode{lsearch()}--对数组
+进行线性搜索并在末尾(！)添加--并不完全有效。\ccode{hsearch()}--一个包含文本和信息
+指针的结构的哈希表--只维护一个固定大小的表，并且在entrires上强加了一个笨拙的结构。
+\ccode{tsearch()}--一种具有任意比较和删除的二叉树--是最普遍的家族，但是如果初始符号
+是从排序序列中安装的。
+
+    在UNIX系统上，\ccode{tsearch()}可能是最好的折衷方案。带有二进制线程树的可移植
+实现的源代码可以在[Sch87]中找到。然而，如果这个家族不可用，或者如果我们不能保证随机
+初始化，我们应该寻找一个更简单的工具来实现。事实证明，可以很容易地扩展bsearch()的
+仔细实现，以支持插入到排序数组中：
+\begin{lstlisting}
+void * binary (const void * key, 
+    void * _base, size_t * nelp, size_t width, 
+    int (* cmp) (const void * key, const void * elt)) 
+{   size_t nel = * nelp; 
+#define base (* (char **) & _base) 
+    char * lim = base + nel * width, * high; 
+    
+    if (nel > 0) 
+    {   for (high = lim — width; base <= high; nel >>= 1) 
+        {   char * mid = base + (nel >> 1) * width; 
+            int c = cmp(key, mid); 
+            
+            if (c < 0) 
+                high = mid — width; 
+            else if (c > 0) 
+                base = mid + width, —— nel; 
+            else 
+                return (void *) mid; 
+        }
+\end{lstlisting}
+
+    到目前为止，这是在任意数组中的标准二进制搜索。key要查找对象的关键点；base基础是
+*nelp元素表的起始地址，每一个都有width宽度字节；cmp是一个比较函数，用于将键与表元素
+进行比较。此时，我们已经找到了一个表元素并返回了它的地址，或者基现在是键应该在表中的地址。
+我们继续这样做：
+
+\begin{lstlisting}
+        memmove(base + width, base, lim — base);
+    } 
+    ++ *nelp; 
+    return memcpy(base, key, width); 
+#undef base 
+} 
+\end{lstlisting}
+
+    \ccode{memmove()}将数组的末尾移开*，\ccode{memcpy()}插入键。我们假设在数组之外还有空间，
+并通过nelp记录，我们添加了一个元素-\ccode{binary()}与标准函数\ccode{bsearch()}不同，只需要
+地址，而不是包含表中元素数的变量的值。
+
+    考虑到搜索和录入的一般方法，我们可以很容易地管理我们的符号表。
+首先，我们需要将一个关键字与一个表元素进行比较：
+
+\begin{lstlisting}
+static int cmp (const void * _key, const void * _elt) 
+{   const char * const * key = _key; 
+    const struct Name * const * elt = _elt; 
+    return strcmp(* key, (* elt) —> name); 
+} 
+\end{lstlisting}
+
+    作为键，我们只传递指向输入符号文本的指针的地址。当然，Name结构体，我们只查看它们的
+.name组件。
+
+    搜索或输入是通过调用具有适当参数的\ccode{binary()}来完成的。由于我们事先不知道符号的数量，
+所以我们确保表始终有展开的空间：
+
+\begin{lstlisting}
+static struct Name ** search (const char ** name) 
+{   static const struct Name ** names; /* dynamic table */ 
+    static size_t used, max; 
+    
+    if (used >= max) 
+    {   names = names 
+            ? realloc(names, (max *= 2) * sizeof * names) 
+            : malloc((max = NAMES) * sizeof * names); 
+        assert(names); 
+    } 
+    return binary(name, names, & used, sizeof * names, cmp); 
+} 
+\end{lstlisting}
+
+    NAMES是一个定义的常量，表条目的初始分配是表项的初始分配；每次我们用完时，我们都会将表的
+大小翻一番。
+
+    \ccode{search()}以一个指向文本的地址被发现并返回该表项的地址。如果文本不能在表中找到，
+\ccode{binary()}已在表中插入键，即仅指向文本的指针，而不是一个结构名。这一战略是为\ccode{screen()}
+效益，只有建立一个新表元素如果标识符从输入是未知的：
+\begin{lstlisting}
+int screen (const char * name) 
+{   struct Name ** pp = search(& name); 
+    
+    if (* pp == (void *) name) /* entered name */ 
+    * pp = new(Var, name); 
+    symbol = * pp; 
+    return (* pp) —> token; 
+} 
+\end{lstlisting}
+
+    \ccode{screen()}让\ccode{screen()}查找要筛选的输入符号。如果指向符号文本的
+指针被输入到符号表中，我们需要用描述新标识符的条目替换它。
+
+    对于\ccode{screen()}，新的标识符必须是变量。我们假设有一个类型描述Var，它
+知道如何构造描述变量的名称结构，然后让\ccode{new()}来完成其余的工作。在任何情
+况下，我们让符号指向符号表条目，然后返回它的.token值。
+
+\begin{lstlisting}
+void install (const void * np) 
+{   const char * name = ((struct Name *) np) —> name; 
+    struct Name ** pp = search(& name); 
+    
+    if (* pp != (void *) name) 
+        error("cannot install name twice: %s", name); 
+    * pp = (struct Name *) np; 
+}
+\end{lstlisting}
+
+    \ccode{install()}稍微简单一些。我们接受一个name对象，让\ccode{search()}在符号表
+中找到它。\ccode{install()}应该只处理新的符号，所以我们应该总是能够输入对象而不是它的名称。
+否则，如果\ccode{search()}真的找到了一个符号，我们就有麻烦了。
 
 % \section{Subclass Implementation ---\cemph{Var}}
 \section{子类的实现：\cemph{Var}}<++>
+
+\begin{lstlisting}
+\end{lstlisting}
 
 % \section{Assignment}
 \section{赋值}<++>
