@@ -299,13 +299,64 @@ void install (const void * np)
 否则，如果\ccode{search()}真的找到了一个符号，我们就有麻烦了。
 
 % \section{Subclass Implementation ---\cemph{Var}}
-\section{子类的实现：\cemph{Var}}<++>
+\section{子类的实现：\cemph{Var}}
+
+    \ccode{screen()} 调用 \ccode{new()} 来创建一个新的变量符号表,并将其返回给识别器,该
+识别器将其出入表达树中.因此,VAR必须创建可以向节点那样工作的符号表条目,也就是说,在定义
+\\ccode{struct Var}时,我们需要扩展一个struct名称,已集成驻留在符号表中的能力,并且必须支持
+适用于表达式接待的动态连接函数.我们在Var.h中描述了接口:
 
 \begin{lstlisting}
+const void * var;
+const void * Assign;
 \end{lstlisting}
 
+    变量具有名称和值。如果我们评估算术表达式，我们需要返回.Value组件。
+如果删除表达式，则不能删除变量节点，因为它位于符号表中：
+
+\begin{lstlisting}
+struct Var {    struct Name _; double value; };
+#define value(tree) (((struct Var *) tree) -> value)
+static double doVar (const void * tree)
+{
+    return value(tree);
+}
+static void freeVar (void * tree){}
+\end{lstlisting}
+
+正如在4.6节中所讨论的那样，通过为值提供访问函数来简化代码。
+
+创建变量需要分配一个\ccode{struct Var}，插入变量名的动态副本，以及识别器规定的令牌值VAR：
+
+\begin{lstlisting}
+static void * mkVar (va_list ap)
+{   struct Var * node = calloc(1, sizeof(struct Var));
+    const char * name = va_arg(ap, const char *);
+    size_t len = strlen(name);
+    
+    assert(node);
+    node -> _.name = malloc(len + 1);
+    assert(node -> _.name);
+    strcpy((void *) node -> _.name, name);
+    node -> _.token = VAR;
+    return node;
+}
+static struct Type _Var = { mkVar, doVar, freeVar };
+const void * Var = &_Var;
+\end{lstlisting}
+
+    \ccode{new()}负责在符号返回到\ccode{screen()}或任何想使用它的人之前将类型描述Var
+插入到节点中。
+
+    从技术上讲，\ccode{mkVar()}是Name的构造函数。但是，只需要动态地存储变量名称。
+因为我们决定在计算器中构造函数负责分配对象，所以我们不能让Var构造函数调用名称构造函数
+来维护.name和.Token组件--Name构造函数将分配一个\ccode{struct Name}，而不是\ccode{struct Var}。
+
+
 % \section{Assignment}
-\section{赋值}<++>
+\section{赋值}
+\begin{lstlisting}
+\end{lstlisting}
 
 % \section{Anothor Subclass ---\cemph{Constants}}
 \section{另一个子类：\cemph{Constants}}<++>
