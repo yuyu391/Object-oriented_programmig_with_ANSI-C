@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.2.6)  4 APR 2018 21:33
+This is XeTeX, Version 3.14159265-2.6-0.99992 (TeX Live 2015/Debian) (preloaded format=xelatex 2018.2.6)  8 APR 2018 17:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1972,18 +1972,189 @@ Missing character: There is no ― in font [lmroman10-regular]:mapping=tex-text!
 
 
 
-] [44] [45] [46] [47] [48] [49] [50
+] [44] [45] [46] [47] [48]
+Missing character: There is no π in font [lmroman10-regular]:mapping=tex-text!
 
-])
+! Misplaced alignment tab character &.
+<recently read> &
+                 
+l.384 ...�值？我们从Kernighan和Pike的hoc[K&
+                                                  P 84]中获得线索，
+I can't figure out why you would want to use a tab mark
+here. If you just want an ampersand, the remedy is
+simple: Just type `I\&' now. But if some right brace
+up above has ended a previous alignment prematurely,
+you're probably due for more error messages, and you
+might try typing `S' now just to see what is salvageable.
+
+[49] [50] [51]
+! Undefined control sequence.
+l.550 \ccdoe
+            {if}语句，等等。识别是在\ccode{stmt()}中处理的，�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.559 类型\ccod
+                 {Parm}指向符号表中的函数项，则这并不太难�...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.562 
+      
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+Missing character: There is no 表 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 示 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 单 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 个 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 参 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 数 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no ， in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 并 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 使 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 用 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 节 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 点 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 类 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 型 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 指 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 向 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 符 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 号 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 表 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 中 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 的 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 函 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 数 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 项 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no ， in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 则 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 这 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 并 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 不 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 太 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 难 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no ， in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 在 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 该 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 表 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 中 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no ， in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 只 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 要 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 不 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 允 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 许 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 递 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 归 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no ， in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 就 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 可 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 以 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 暂 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 时 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 存 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 储 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 参 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 数 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 值 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 。 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 当 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 然 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no ， in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 带 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 有 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 参 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 数 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 名 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 称 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 和 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 多 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 个 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 参 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 数 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 的 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 函 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 数 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 比 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 较 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 困 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 难 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 。 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 然 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 而 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no ， in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 这 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 是 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 一 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 个 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 很 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 好 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 的 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 练 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 习 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no ， in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 以 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 探 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 讨 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 继 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 承 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 和 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 动 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 态 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 联 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 系 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 的 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 好 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 处 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 。 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 我 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 们 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 将 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 在 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 第 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 章 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 中 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 回 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 到 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 这 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 个 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 问 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 题 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 上 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 来 in font [lmroman10-regular]:mapping=tex-text!
+Missing character: There is no 。 in font [lmroman10-regular]:mapping=tex-text!
+
+Overfull \hbox (299.2783pt too wide) in paragraph at lines 558--562
+[]\EU1/STSong(0)/m/n/10.95 用 户 自 定 义 的 函 数 提 出 了 一 个 非 常 有 趣 的 问 题。|  如 果 我 们 用
+ $[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][
+][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]
+[][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][][]\OT1/cmr/m/n/
+10.95 11[][][][][][][][][][][]$ 
+ []
+
+[52])
 \openout2 = `ch06-Hier.aux'.
 
  (./ch06-Hier.tex
 第\CJKnumber {6}章 6.
-[51
+[53
 
 
 
-] [52])
+
+] [54])
 \openout2 = `ch07-preproc.aux'.
 
  (./ch07-preproc.tex
@@ -1992,95 +2163,95 @@ LaTeX Font Info:    Font shape `EU1/lmtt/bx/n' in size <20.74> not available
 (Font)              Font shape `EU1/lmtt/b/n' tried instead on input line 11.
 LaTeX Font Info:    Font shape `EU1/lmtt/bx/sl' in size <20.74> not available
 (Font)              Font shape `EU1/lmtt/b/sl' tried instead on input line 11.
-[53
-
-
-
-
-] [54])
-\openout2 = `ch08-DyTC.aux'.
-
- (./ch08-DyTC.tex
-第\CJKnumber {8}章 8.
 [55
 
 
 
 
 ] [56])
-\openout2 = `ch09-statc.aux'.
+\openout2 = `ch08-DyTC.aux'.
 
- (./ch09-statc.tex
-第\CJKnumber {9}章 9.
+ (./ch08-DyTC.tex
+第\CJKnumber {8}章 8.
 [57
 
 
 
 
-] [58
+] [58])
+\openout2 = `ch09-statc.aux'.
+
+ (./ch09-statc.tex
+第\CJKnumber {9}章 9.
+[59
+
+
+
+
+] [60
 
 ])
 \openout2 = `ch10-Deleg.aux'.
 
  (./ch10-Deleg.tex
 第\CJKnumber {10}章 10.
-[59
-
-
-
-] [60])
-\openout2 = `ch11-Methods.aux'.
-
- (./ch11-Methods.tex
-第\CJKnumber {11}章 11.
 [61
 
 
 
+] [62])
+\openout2 = `ch11-Methods.aux'.
 
-] [62
+ (./ch11-Methods.tex
+第\CJKnumber {11}章 11.
+[63
+
+
+
+
+] [64
 
 ])
 \openout2 = `ch12-persis.aux'.
 
  (./ch12-persis.tex
 第\CJKnumber {12}章 12.
-[63
-
-
-
-] [64])
-\openout2 = `ch13-Except.aux'.
-
- (./ch13-Except.tex
-第\CJKnumber {13}章 13.
 [65
 
 
 
+] [66])
+\openout2 = `ch13-Except.aux'.
 
-] [66
+ (./ch13-Except.tex
+第\CJKnumber {13}章 13.
+[67
+
+
+
+
+] [68
 
 ])
 \openout2 = `ch14-fwMsg.aux'.
 
  (./ch14-fwMsg.tex
 第\CJKnumber {14}章 14.
-[67
-
-
-
-] [68]) (./apdA-Hints.tex
-附录 A.
 [69
 
 
 
-] [70] [71]
+] [70]) (./apdA-Hints.tex
+附录 A.
+[71
+
+
+
+] [72] [73]
 Underfull \vbox (badness 1472) has occurred while \output is active []
 
- [72]
-[73] [74] [75] [76
+ [74]
+[75] [76] [77] [78
 
 ])
 \openout2 = `apdB-Prepr.aux'.
@@ -2093,18 +2264,18 @@ Overfull \hbox (4.71896pt too wide) in paragraph at lines 13--23
 cribed the result in [[]].
  []
 
-[77
+[79
 
 
-] [78] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
+] [80] (/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
 File: lstlang1.sty 2015/06/04 1.6 listings language file
 )
-[79] [80])
+[81] [82])
 \openout2 = `apdC-Manual.aux'.
 
  (./apdC-Manual.tex
 附录 C.
-[81
+[83
 
 
 
@@ -2114,21 +2285,21 @@ File: lstlang1.sty 2015/06/04 1.6 listings language file
 LaTeX Font Warning: Font shape `EU1/STSong(0)/bx/it' undefined
 (Font)              using `EU1/STSong(0)/bx/n' instead on input line 64.
 
-[82] [83] [84
+[84] [85] [86
 
 ])
 runsystem(makeindex book.idx)...executed safely (allowed).
 
- (./book.ind) [85
+ (./book.ind) [87
 
 
 
 
-] [86
+] [88
 
 ])
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 51.
- [87]
+ [89]
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 51.
  (./book.aux (./preface.aux)
 (./ch01-ADT.aux) (./ch02-Dyln.aux) (./ch03-psExpr.aux) (./ch04-inhert.aux)
@@ -2143,12 +2314,12 @@ LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
  ) 
 Here is how much of TeX's memory you used:
- 31060 strings out of 493638
- 557546 string characters out of 6146797
- 696867 words of memory out of 5000000
- 33959 multiletter control sequences out of 15000+600000
+ 31105 strings out of 493638
+ 558028 string characters out of 6146797
+ 696868 words of memory out of 5000000
+ 34004 multiletter control sequences out of 15000+600000
  11318 words of font info for 102 fonts, out of 8000000 for 9000
  1328 hyphenation exceptions out of 8191
  63i,13n,96p,10458b,1134s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on book.pdf (97 pages).
+Output written on book.pdf (99 pages).

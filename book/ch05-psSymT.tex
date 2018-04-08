@@ -355,28 +355,211 @@ const void * Var = &_Var;
 
 % \section{Assignment}
 \section{赋值}
+
+    赋值是二进制操作。识别器保证有一个变量作为左操作数，和作为右操作数。因此，
+我们真正需要实现的是实际的赋值操作，即动态链接到类型描述的.exec组件中的函数：
+
 \begin{lstlisting}
+#include "value.h"
+#include "value.r"
+
+static double doAssign (const void * tree)
+{
+    return value(left(tree)) = exec(right(tree));
+}
+
+static struct Type _Assign = { mkBin, doAssign, freeBin };
+
+const void * Assign = & _Assign; 
 \end{lstlisting}
 
+    我们共享Bin的构造函数和析构函数，因此在实现算术操作时必须使其成为全局的。
+我们还共享\ccode{struct Bin}和访问函数\ccode{Left()}和\ccode{right()}。所有
+这些都是通过接口文件value.h和表示文件value.r导出的。我们自己的\ccode{struct Var}
+的访问函数\ccode{value()}故意允许修改，这样赋值就可以很好地实现。
+
 % \section{Anothor Subclass ---\cemph{Constants}}
-\section{另一个子类：\cemph{Constants}}<++>
+\section{另一个子类：\cemph{Constants}}
+
+    谁喜欢键入π或其他数学常量的值？我们从Kernighan和Pike的hoc[K&P 84]中获得线索，
+并为我们的计算器预定义了一些常数。在初始化识别器时需要调用以下函数：
+
+\begin{lstlisting}
+void initConst (void) 
+{
+    static const struct Var constants [] = { /* like hoc */ 
+        { &_Var, "PI", CONST, 3.14159265358979323846 }, 
+        ... 
+        0 }; 
+    const struct Var * vp;
+    for (vp = constants; vp —> _.name; ++ vp)
+        install(vp);
+} 
+\end{lstlisting}
+
+    变量和常量几乎相同：它们都有名称和值，并且都存在于符号表中；都返回它们的值
+以便在算术表达式中使用；在删除算术表达式时不应该删除它们。但是，我们不应该将其
+赋值给常量，因此我们需要商定一个新的令牌值Const，识别程序在factor()中接受它，
+就像VAR一样，但是在stmt()中赋值的左边不允许这样做。
 
 % \section{Mathematical Functions ---\cemph{Math}}<++>
-\section{数学函数：\cemph{Math}}<++>
+\section{数学函数：\cemph{Math}}
+    ANSI-C定义了许多数学函数，如sin()、sqrt()、exp()等。作为继承的另一个练习，
+我们将向计算器中添加具有单个双参数和双重结果的库函数。
+
+    这些函数就像一元运算符一样工作。我们可以为每个函数定义一种新的节点类型，
+并从\ccode{Minus}和\ccode{Name}类中收集大部分功能，但是有一种更简单的方法。
+我们将\ccode{struct Name}扩展到\ccode{struct Math}，如下所示：
+
+\begin{lstlisting}
+struct Math { struct Name _; 
+    double (* funct) (double); 
+}; 
+
+#define funct(tree) (((struct Math *) left(tree)) —> funct)
+\end{lstlisting}
+
+    除了输入中要使用的函数名和识别标记之外，我们还将像sin()这样的库函数的地址
+存储在符号表条目中。
+
+在初始化过程中，我们调用以下函数将所有函数描述输入符号表：
+
+\begin{lstlisting}
+#include <math.h> 
+void initMath (void) 
+{ 
+    static const struct Math functions [] = { 
+        { &_Math, "sqrt", MATH, sqrt }, 
+        ... 
+        0 };
+        
+    const struct Math * mp;
+    
+    for (mp = functions; mp —> _.name; ++ mp)
+        install(mp);
+} 
+\end{lstlisting}
+
+    函数调用是一个因素，就像使用\ccode{minus}一样。为了获得认可，我们需要扩展
+语法以了解各种因素：
+
+\begin{lstlisting}
+factor : NUMBER 
+    | — factor 
+    | ... 
+    | MATH ( sum ) 
+\end{lstlisting}
+
+    \ccode{MATH}是\ccode{initMath()}输入的所有函数的通用标记。这将转换为
+识别器中的\ccode{factor()}添加的以下内容：
+
+\begin{lstlisting}
+static void * factor (void) 
+{
+    void * result;
+    ...
+    switch (token) { 
+    case MATH:
+    {
+        const struct Name * fp = symbol;
+        
+        if (scan(0) != ’(’)
+            error("expecting (");
+        scan(0);
+        result = new(Math, fp, sum());
+        if (token != ’)’)
+            error("expecting )");
+        break;
+    } 
+\end{lstlisting}
+
+    \ccode{symbol}首先包含sin()等函数的符号表元素。我们通过调用\ccode{sum()}
+来保存指针并为函数参数构建表达式树。然后，我们使用\ccode{Math}，函数的类型描述，
+并让\ccode{new()}为表达式树构建以下节点：
+
+\begin{lstlisting}
+\* 缺失图片 *\
+\end{lstlisting}
+
+    我们让二进制节点的左边指向函数的符号表元素，并在右边附加参数树。二进制节点
+以\ccode{Math}作为类型描述，即将分别调用\ccode{doMath()}和\ccode{FreeMath()}方法
+来执行和删除该节点。
+
+
+    \ccode{Math}节点仍然是用\ccode{mkBin()}构造的，因为这个函数不关心它作为后代
+输入了哪些指针。然而，\ccode{FreeMath()}只能删除正确的子树：
+
+\begin{lstlisting}
+static void freeMath (void * tree)
+{
+    delete(right(tree));
+    free(tree);
+} 
+\end{lstlisting}
+
+    如果仔细查看图片，我们可以看到\ccode{Math}节点的执行是非常容易的。
+\ccode{doMath()}需要调用存储在符号表元素中的任何函数，该元素可作为二进制节点的
+左后代访问，该二进制节点的左端名为：
+
+\begin{lstlisting}
+#include <errno.h> 
+static double doMath (const void * tree) 
+{ 
+    double result = exec(right(tree)); 
+    errno = 0; 
+    result = funct(tree)(result); 
+    if (errno) 
+        error("error in %s: %s", ((struct Math *) left(tree)) —> _.name, 
+            strerror(errno)); 
+    return result; 
+} 
+\end{lstlisting}
+
+    唯一的问题是通过监视ANSI-C头文件errno.h中声明的errno变量来捕获数值错误。
+这就完成了计算器数学函数的实现。
 
 % \section{Summary}
-\section{小结}<++>
+\section{小结}
+
+    基于用于搜索和插入排序数组的函数\ccode{binary()}，我们实现了一个符号表，
+该表包含具有名称和标记值的结构。继承允许我们将其他结构插入到表中，而无需更改
+搜索和插入功能。一旦我们考虑到符号表元素的传统定义，这种方法的优雅就显而易见了：
+
+\begin{lstlisting}
+struct { 
+    const char * name; 
+    int token; 
+    union { /* based on token */ 
+        double value; 
+        double (* funct) (double); 
+    } u;
+}; 
+\end{lstlisting}
+
+    对于关键字，\ccode{union}是不必要的。用户自定义的函数需要更详细的描述，
+而引用\ccode{union}的部分是麻烦的。
+
+    继承允许我们将符号表功能应用于新条目，而根本不更改现有代码。动态链接在许多
+方面有助于保持实现的简单性：可以将常量、变量和函数的符号表元素链接到表达式树中，
+而不必担心我们无意中删除它们；执行函数只关心它自己的节点排列。
 
 % \section{Exercises}
-\section{练习}<++>
+\section{练习}
 
-A quick brown fox jumps over the lazy dogs.
-A quick brown fox jumps over the lazy dogs.
-A quick brown fox jumps over the lazy dogs.
+    新的关键字是必要的，以实现事情，例如\ccode{while}或\ccode{report loops}，
+\ccdoe{if}语句，等等。识别是在\ccode{stmt()}中处理的，但在大多数情况下，这只是
+编译器构造的问题，而不是继承问题。一旦我们决定了语句的类型，我们将构建节点类型，
+比如When、Repeter、或IfElse，符号表中的关键字不需要知道它们的存在。
 
-A quick brown fox jumps over the lazy dogs.
-A quick brown fox jumps over the lazy dogs.
-A quick brown fox jumps over the lazy dogs.
+    更有趣的是ANSI-C的数学库中带有两个参数的函数，如\ccode{atan2()}。从符号表的
+角度来看，函数就像简单的函数一样处理，但是对于表达式树，我们需要发明一个具有
+三个后代的新的节点类型。
+
+    用户自定义的函数提出了一个非常有趣的问题。如果我们用$表示单个参数，并使用节点
+类型\ccod{Parm}指向符号表中的函数项，则这并不太难，在该表中，只要不允许递归，就可
+以暂时存储参数值。当然，带有参数名称和多个参数的函数比较困难。然而，这是一个很好的
+练习，以探讨继承和动态联系的好处。我们将在第11章中回到这个问题上来。
+
 
 \newpage{\thispagestyle{empty}\cleardoublepage}
 % vim: set syntax=tex ts=4 sw=4 tw=76 fo+=Mm cc=+2 noundofile nobackup :
